@@ -1,0 +1,131 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-ourproduct.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>Our Products</h1>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 div-center">
+                <h6 class="center career">
+                    ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-product-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Product Name 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <ul>
+                    <li>
+                        Robust version design
+                    </li>
+                    <li>
+                        Cross-platform architecture
+                    </li>
+                    <li>
+                        Wide variety of integration requirements
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-primary" (click)="inquery();">Inquiry</button>
+                <button type="submit" class="btn btn-warning">Demo</button>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="assets/images/01.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="assets/images/02.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Product Name 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <ul>
+                    <li>
+                        Robust version design
+                    </li>
+                    <li>
+                        Cross-platform architecture
+                    </li>
+                    <li>
+                        Wide variety of integration requirements
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-primary">Inquiry</button>
+                <button type="submit" class="btn btn-warning">Demo</button>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Product Name 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <ul>
+                    <li>
+                        Robust version design
+                    </li>
+                    <li>
+                        Cross-platform architecture
+                    </li>
+                    <li>
+                        Wide variety of integration requirements
+                    </li>
+                </ul>
+                <button type="submit" class="btn btn-primary">Inquiry</button>
+                <button type="submit" class="btn btn-warning">Demo</button>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="assets/images/01.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>Product Features</h1>
+                <h6>Transforming industries with smarter ways</h6>
+            </div>
+            <div class="col-sm-12">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                    <div ngxSlickItem *ngFor="let product of products; index as i" class="slide">
+                        <img src="assets/images/0{{i+1}}.png" alt="" width="100%">
+                        <p class="col-sm-12 center">{{product.title}}</p>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,158 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+    <a class="navbar-brand" routerLink="home" skipLocationChange=true>
+      <i class="icon icon-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_logoFlat"></use>
+        </svg>
+      </i>
+      <div class="company-info">
+        <span class="company-name">ARKEDGE</span>
+        <span class="company-type">TECHNOLOGIES</span>
+      </div>
+    </a>
+    <ul class="navbar-nav-list">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="OurProduct" routerLinkActive="active" skipLocationChange=true>Product</a>
+      </li>
+
+     
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Advancesolution" routerLinkActive="active" skipLocationChange=true>Advance
+          Solutions</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" routerLink="ai" routerLinkActive="active" skipLocationChange=true>AI & AUTOMATION</a>
+    </li>
+    
+      <li class="nav-item nav-dropdown-list">
+        <a class="nav-link" (mouseover)="changeStyle()">Managed Services</a>
+        <ul class="sub-nav" #dropDown>
+          <li class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let list of managedService">
+                     <h6> {{list.name | createSpace}}</h6>
+                      <li class="inner-list" *ngFor="let inlist of list.managedServiceList; index as i">
+                        <a routerLink="{{list.name}}" routerLinkActive="active" skipLocationChange=true (click)="getUrl(i+1, inlist.name);">{{inlist.name | createSpace}}</a>
+                      </li>
+              </div>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+         <a class="nav-link" routerLink="Technology" routerLinkActive="active" skipLocationChange=true>
+          <img src="assets/images/inner-banner-technology.jpg">
+            Technology
+          </a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+          <a class="nav-link" routerLink="Industries" routerLinkActive="active" skipLocationChange=true>
+          <img src="assets/images/inner-banner-industries.jpg">
+            Industries
+          </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </li>
+  </ul>
+  </li>
+
+  <!-- <li class="nav-item">
+    <a class="nav-link" routerLink="Company" routerLinkActive="active" skipLocationChange=true>COMPANY</a>
+  </li> -->
+  <li class="nav-item">
+    <a class="nav-link contactUs" routerLink="Contactus" routerLinkActive="active" skipLocationChange=true>
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_contactUs"></use>
+        </svg>
+      </i>
+    </a>
+  </li>
+  <li class="nav-item tele-no email">
+    <a class="nav-link" href="mailto:info@arkedge.com">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_Email"></use>
+        </svg>
+      </i>
+    </a>
+  </li>
+  <li class="nav-item tele-no">
+    <a class="nav-link">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_phone"></use>
+        </svg>
+      </i>
+      +91 9029290808
+    </a>
+  </li>
+  <li class="nav-item quick-link">
+    <a class="nav-link" (click)="slideToggel()">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_menu"></use>
+        </svg>
+      </i>
+    </a>
+  </li>
+  </ul>
+</div>
+</nav>
+
+<div class="slider-menu" [ngClass]="isOpen ? '' : 'active'">
+  <div class="slider-menu-header">
+  <a class="close-slide" (click)="slideToggel()">
+    <i class="icon icon-ex-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_close"></use>
+      </svg>
+    </i>
+  </a>
+
+  <a class="navbar-brand">
+    <i class="icon icon-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_logo_color"></use>
+      </svg>
+    </i>
+    <div>
+      <span class="company-name">ARKEDGE</span>
+      <span class="company-type">TECHNOLOGIES</span>
+    </div>
+  </a>
+</div>
+  <ul>
+    <li *ngFor="let item of list; index as i" class="menu-list">
+      <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active" skipLocationChange=true>{{item.name | createSpace}}</a>
+    </li>
+  </ul>
+  <div class="slider-footer-contact">
+    <a class="nav-link" href="mailto:info@arkedge.com">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_Email"></use>
+        </svg>
+      </i>
+      info@arkedge.com
+    </a>
+  
+    <a class="nav-link">
+      <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_phone"></use>
+        </svg>
+      </i>
+      321-321-6544
+    </a>
+    </div>
+</div>
+
+<div class="overlay" [ngClass]="isOpen ? '' : 'active'" (click)="slideToggel()">
+</div>

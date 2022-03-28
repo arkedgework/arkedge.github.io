@@ -1,0 +1,405 @@
+<div class="main-banner">
+    <ngb-carousel #carousel interval="5000" [showNavigationArrows]="showNavigationArrows" [pauseOnHover]="pauseOnHover"
+        (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let info of banner; index as i">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>{{info.title}}</h1>
+                    <h1>{{info.title_2}}</h1>
+                    <h3>{{info.description}}</h3>
+                    <button type="submit" class="btn btn-primary" (click)="lernmore();">LEARN MORE</button>
+                    <button type="submit" class="btn btn-warning" (click)="btnClick();">CONTACT US</button>
+                </div>
+                <div class="info-img">
+                    <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
+                </div>
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="assets/images/banner-1.jpg" alt="My image {{i + 1}} description">
+            </div>
+
+        </ng-template>
+    </ngb-carousel>
+</div>
+<section class="section-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>Expand Your Business Through a <span class="heading-highlight">Strong Virtual Presence</span></h1>
+                <h6>
+                    <b>The ultimate objective behind our every move is to give our customers utmost satisfaction with
+                        our
+                        quality services and support.</b><br>
+                    We try the best possible way out to provide our customers with top-notch services and at affordable
+                    rates. <br>So, give us a Oppurtunity to serve you !
+                </h6>
+            </div>
+            <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
+                <div class="panel">
+                    <div class="panel-front {{item.color}}">
+                        <div class="panel-heading">
+                            <div class="icon-circle circle-bg">
+                                <i class="icon icon-medium">
+                                    <svg focusable="false">
+                                        <use attr.xlink:href="{{item.icon}}"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <h5>{{item.title}}</h5>
+                        </div>
+                        <div class="panel-body">
+
+                            <p *ngFor="let data of item.list">{{data.name}}</p>
+                        </div>
+                    </div>
+                    <div class="panel-back {{item.color}}">
+                        <h5>{{item.title}}</h5>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-our-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>OUR <span class="heading-highlight">PRODUCTS</span></h1>
+            </div>
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig2">
+                <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
+                                <img src="assets/images/01.png">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <h5>Product Name 1</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Robust version design
+                                    </li>
+                                    <li>
+                                        Cross-platform architecture
+                                    </li>
+                                    <li>
+                                        Wide variety of integration requirements
+                                    </li>
+                                </ul>
+                                <button type="submit" class="btn btn-primary" (click)="btnOurProduct();">KNOW MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
+                                <img src="assets/images/01.png">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <h5>Product Name 2</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Robust version design
+                                    </li>
+                                    <li>
+                                        Cross-platform architecture
+                                    </li>
+                                    <li>
+                                        Wide variety of integration requirements
+                                    </li>
+                                </ul>
+                                <button type="submit" class="btn btn-primary" (click)="btnOurProduct();">KNOW MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 v-flex">
+                                <img src="assets/images/01.png">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <h5>Product Name 3</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Robust version design
+                                    </li>
+                                    <li>
+                                        Cross-platform architecture
+                                    </li>
+                                    <li>
+                                        Wide variety of integration requirements
+                                    </li>
+                                </ul>
+                                <button type="submit" class="btn btn-primary" (click)="btnOurProduct();">KNOW MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</section>
+
+<section class="section-sevices">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>INDUSTRIES <span class="heading-highlight">WE SERVE</span></h1>
+                <h6>
+                    <b>We ensure excellence in service through understanding of our client's business and their unique
+                        requirements.</b><br>
+
+                    Due to our close relationships and constant interactions with clients,<br>
+
+                    we have developed solid understanding and insight in our focus industries that include:
+                </h6>
+            </div>
+
+            <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="icon-circle {{item.color}}">
+                            <i class="icon icon-medium">
+                                <svg focusable="false">
+                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <h5>{{item.title}}</h5>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>OUR RECENT<span class="heading-highlight"> SOLUTIONS</span></h1>
+                <h6>
+                    <b>We bring powerful TOOLS for enhance your productivity.</b><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.<br> Proin
+                    gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                </h6>
+            </div>
+        </div>
+        <div class="project-grid">
+            <li *ngFor="let info of projects; index as i" class="p2">
+                <a>
+                    <figure>
+                        <img src="assets/images/project/project-{{i + 1}}.jpg" alt="Experience">
+                        <div class="show-more-overlay"></div>  
+                        <figcaption>
+                            <h2 class="show_more-title">{{info.title}}</h2>
+                            <p class="show_more-desc">
+                                {{info.description}}
+                            </p>
+                            <button *ngIf="i === 0" type="submit" class="btn btn-primary">LEARN MORE</button>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </div>
+    </div>
+</section>
+
+<div class="clear-float"></div>
+<section class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>HAPPY <span class="heading-highlight">CLIENTS</span></h1>
+                <h6>
+                    consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo. <br>Proin sodales pulvinar tempor.lacus accumsan et viverra justo
+                    commodo. Proin sodales pulvinar tempor.</h6>
+            </div>
+
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let client of client; index as i" class="slide col-lg-3 col-md-3 col-sm-12">
+                    <img src="assets/images/logo{{i+1}}.png" alt="" width="100%">
+                </div>
+            </ngx-slick-carousel>
+
+            <!-- <div *ngFor="let client of client; index as i" class="col-lg-3 col-md-3 col-sm-12">
+                <img src="{{client.img}}-{{i+1}}.jpg" alt="client">
+            </div> -->
+
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <img src="assets/images/testimonials.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>TESTIMONIALS</h1>
+                <ngb-carousel #carousel interval="5000" [showNavigationArrows]="showNavigationArrows"
+                    [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let info of testimonials; index as i">
+                        <p>
+                            {{info.clientView_1}}
+                        </p>
+                        <p>
+                            {{info.clientView_2}}
+                        </p>
+                        <p>
+                            {{info.clientView_3}}
+                        </p>
+                        <p>
+                            - {{info.clientName}}
+                        </p>
+
+                    </ng-template>
+                </ngb-carousel>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="contact-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>WHAT SET US <span class="heading-highlight">APART</span></h1>
+                <p class="set-part">
+                    We ensure excellence in service through understanding of our client's business and their unique
+                    requirements.
+
+                    Due to our close relationships and constant interactions with clients,
+
+                    we have developed solid understanding and insight in our focus industries that include:
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div>
+                            <h6>Address</h6>
+                            <p>703, Wing "B", Galaxy L.X.APT.<br>
+
+                                Navre Park, Ambarnath (W),<br>
+
+                                Thane-421501, Maharashtra,<br>
+
+                                INDIA</p>
+
+                            <h6>Contact</h6>
+                            <p>
+                                <a class="email-link" href="mailto:info@arkedge.com">info@arkedge.com</a><br>
+                                Calling : +91 9029290808
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div>
+                            <h6>Working Hours</h6>
+                            <p>Monday To Friday: 11AM - 8PM<br>
+
+                                Week-End: 11 AM - 2PM</p>
+
+
+                            <h6>Socials</h6>
+                            <div class="social-net">
+
+                                <ul>
+                                    <li><a href="https://www.facebook.com" target="_blank">
+                                            <i class="icon icon-ex-small">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_facebook"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com" target="_blank">
+                                            <i class="icon icon-ex-small">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_instagram"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Tweeter</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.twitter.com" target="_blank">
+                                            <i class="icon icon-ex-small">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_twitter"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Instragram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>GET IN <span class="heading-highlight">TOUCH</span></h1>
+                <form>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                        </div>
+
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Your Mail" name="yourMail">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    <button type="submit" class="btn btn-warning">RESET</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

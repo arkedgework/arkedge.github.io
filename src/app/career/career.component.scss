@@ -1,0 +1,36 @@
+.text-wrap{
+    margin:50px 0 30px;
+}
+.section-career{
+    .career{
+        margin-bottom:70px;
+    }
+    form{
+        h2{
+            margin-bottom:50px;
+        }
+        margin-top:70px;
+    }
+.custom-file-label{
+    left:15px;
+    width: calc(100% - 30px);
+    border-radius:150px;
+    overflow:hidden;
+    color: #495057;
+}
+.table{
+    margin-bottom:0px;
+    thead{
+        th{
+            border-bottom: 1px;
+            background:#d6d5d5;
+            color:#000;
+        }
+    }
+}
+td{
+    a{
+        color:#0761a9;
+    }
+}
+}

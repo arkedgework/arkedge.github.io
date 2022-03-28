@@ -1,0 +1,11 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+<a class="scroll-top" *ngIf="isShow" (click)="gotoTop()">
+    <i class="icon icon-ex-small">
+        <svg focusable="false">
+            <use xlink:href="#icon_scrollTop"></use>
+        </svg>
+    </i>
+</a> 

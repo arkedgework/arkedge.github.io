@@ -1,0 +1,404 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-about.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>About ARKEDGE</h1>
+                    <h6>We value loyalty, creativity and productivity with results...</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="about-tab inner-nav-tab">
+    <div class="tab-navigation">
+        <div class="col-sm-12">
+            <div class="container">
+                <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                    <li [ngbNavItem]="1">
+                        <a ngbNavLink>About Us</a>
+                        <ng-template ngbNavContent>
+                            <section class="note-desc">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text">
+                                                ARKEDGE is a rapidly growing professionally managed organization with competent and qualified brass at the helm of the affairs. The organization is making its presence felt on the engineering solution and services, Staffing and IT training circuit. Equipped with cross cultural operating experience; an asset, it drives the organization to deliver nothing but the best.
+
+
+                                            </p>
+                                            <p>
+                                                Over the years we have built up a solid team of software professionals that come from different backgrounds and enlarge the creative potential of ARKEDGE. The competence that they offer contains a wide range of custom programming skills including the latest and most effective development in Microsoft technologies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="about-key-diff">
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-8 col-lg-8 col-sm-12">
+                                            <h1>Key Differentiators</h1>
+                                            <ul>
+                                                <li *ngFor="let key of keydiff">
+                                                    {{key.list}}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-4 col-lg-4 col-sm-12">
+                                            <img src="assets/images/about-support.png">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="about-info">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-12 v-align">
+                                            <p>Ever-growing demand for Web Application solutions is driven by rapidly changing market conditions and technology progress. To streamline your business, we address those issues with our Internet and Intranet solutions. In addition we also provide you web / animation design services.<br><br>
+                                                In addition ARKEDGE specializes in a bunch of IT training services for corporate, institutions and individuals. We do organize corporate training programs for industry officials who find it difficult to mingle their expertise with latest IT tools and IT based technology. We do impart IT training for graduates in multiple discipline including computer application, hard core technology, business administration, and individuals who are in the mid of their management education.
+
+
+                                            </p>
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <img src="assets/images/about-info.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class="section-info">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>
+                                                Along with the engineering solution and services ARKEDGE is specialized
+                                                in helpings client
+                                                organizations identify, evaluate, and recruit executives at various
+                                                levels. It comprises of
+                                                well-qualified group of people having faith in camaraderie and serving
+                                                the industry to find the
+                                                solutions to various key areas as Staffing, Executive Search and IT
+                                                training.
+                                                <br><br>
+                                                In addition ARKEDGE specializes in a bunch of IT training services for
+                                                corporate, institutions and
+                                                individuals. We do organize corporate training programs for industry
+                                                officials who find it difficult
+                                                to mingle their expertise with latest IT tools and IT based technology.
+                                                We do impart IT training for
+                                                graduates in multiple discipline including computer application, hard
+                                                core technology, business
+                                                administration, and individuals who are in the mid of their management
+                                                education.
+                                            </p>
+                                        </div>
+                                        <div *ngFor="let item of solution"
+                                            class="col-lg-4 col-md-4 col-sm-12 panel-container">
+                                            <div class="panel">
+                                                <div class="panel-front {{item.color}}">
+                                                    <div class="panel-heading">
+                                                        <div class="icon-circle circle-bg">
+                                                            <i class="icon icon-medium">
+                                                                <svg focusable="false">
+                                                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                                                </svg>
+                                                            </i>
+                                                        </div>
+                                                        <h5>{{item.title}}</h5>
+                                                    </div>
+                                                    <div class="panel-body">
+
+                                                        <p *ngFor="let data of item.list">{{data.name}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-back {{item.color}}">
+                                                    <h5>{{item.title}}</h5>
+                                                    <p>{{item.description}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="2">
+                        <a ngbNavLink>Why ARKEDGE?</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="running-text">
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </p>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        <section class="why-us">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul>
+                                            <li *ngFor="let list of bulletPoint; index as i">
+                                                    {{list.list}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="wa-info">
+                                        <h2>Vision</h2>
+                                        <p>
+                                            ARKEDGE was founded with a philosophy that every organization has its own unique set of people, processes, technology, culture, values, skills & vision. We are committed to understand these unique parameters of organizations & customizing our solutions to suit them.
+                                            <br><br>
+                                            We aim for long term relationship that brings in immense satisfaction and prosperity to both ends. We value loyalty, creativity and productivity with results.
+                                        </p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="wa-info">
+                                        <h2>Mission</h2>
+                                        <p>
+                                            Our endeavor is to achieve total customer satisfaction, by providing quality products and services, using simplifying technologies and continually improving processes, through competent employees and business partners.
+                                            <br><br>
+                                            To be the preferred choice of our customers, employees and partners
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                    <h1>
+                                        Centers of Excellence
+                                    </h1>
+                                    <p>
+                                        We have structured our business operations into six dedicated practice areas. Each practice area operates as a Center of Excellence (CoE).
+                                    </p>
+                                    <h6>
+                                        Key Differentiators
+                                    </h6>
+                                    
+
+                                        <ul>
+                                            <li *ngFor="let list of bulletPoint_2; index as i">
+                                                    {{list.list}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                    <h1>
+                                        Value Initiative
+                                    </h1>
+                                    <p>
+                                        A commitment to quality, learning from the previous successes and mistakes, setting higher benchmarks and generate productive results.
+                                    </p>
+
+                                    <h6>
+                                        Exceeding customer expectation
+                                    </h6>
+                                    <p>
+                                        Treating customers as lifetime assets and striving to integrate and partner with customers in creating value.
+                                     </p>
+
+                                     <h6>
+                                        Employee Empowerment
+                                    </h6>
+                                    <p>
+                                        Empowering employees at all levels and motivating them to challenge the status quo, to set and achieve ambitious goals for themselves and the company.
+                                     </p>
+
+                                     <h6>
+                                        Joy at Work
+                                    </h6>
+                                    <p>
+                                        Providing employees a conducive, challenging environment where creativity is valued, teamwork is encouraged, performances are rewarded and success celebrated.
+                                     </p>
+
+                                     <h6>
+                                        Integrity
+                                    </h6>
+                                    <p>
+                                        A commitment to be open, frank, loyal and ethical in our interactions with all our stakeholders.
+                                     </p>
+                                </div>
+                            </div>
+                            </div>
+                            </section>
+
+                        </ng-template>
+                    </li>
+
+                   <li [ngbNavItem]="3">
+                        <a ngbNavLink>Partner</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="running-text">
+                                            ARKEDGE is a rapidly growing professionally managed organization with competent and
+                                            qualified brass at the helm of the affairs.
+                                        </p>
+                                        <p>
+                                            from different backgrounds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <section class="partner-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div *ngFor="let data of partnerInfo; index as i" class="col-lg-3 col-md-3 col-sm-12">
+                                                <div class="panel" (click)="open(content)">
+                                                   <div class="panel-body">
+                                                       <a><img src="assets/images/logo{{i+1}}.png"></a>
+                                                    </div>
+                                                 </div>
+                                                 <ng-template #content let-modal>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">{{data.title}}</h4>
+                                                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                <div class="modal-body">
+                                                    
+                                                    <div class="panel">
+                                                        <div class="panel-header">
+                                                            <img src="assets/images/logo{{i+1}}.png">
+                                                         </div>
+                                                        <div class="panel-body">
+                                                            <p>{{data.desc}}</p>
+                                                            <a href="{{data.url}}" target="_blank">{{data.url}}</a>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                              </ng-template>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </section>
+                             </div>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink>Leadership</a>
+                        <ng-template ngbNavContent>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-sm-12 col-md-10 div-center center">
+                                        <p class="running-text">
+                                            A great leader's courage to fulfill his vision comes from passion, not position.
+                                        </p>
+                                        <p>
+                                            At ARKEDGE, we all aspire to be tomorrow's leader. Individually we are pathfinders and collectively we are a doer (achiever).
+                                            <br>
+                                            We are passionate about everything that we do and so do it the best way.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="leader-ship first-child">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- <span class="img-container">
+                                            <img src="assets/images/leadership/leader-{{i+1}}.jpg" align="left">
+                                        </span> -->
+                                        <p>
+                                            <img class="div-3" src="assets/images/leadership/person3.png" align="left">
+                                           <span class="title-name">Same Martinez</span><br>
+                                            <span class="title-info">Chief Executive Officer & Co-Founder</span><br><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+                                           
+                                          </p>
+                                          <button class="btn btn-primary" (click)="open(content)">Read More</button>
+                                          <ng-template #content let-modal>
+                                            <div class="modal-header">
+                                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <!-- <img class="div-3" src="assets/images/leadership/person3.png" align="left"> -->
+                                               <span class="title-name">Same Martinez</span><br>
+                                                <span class="title-info">Chief Executive Officer & Co-Founder</span><br><br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
+                                               
+                                              </p>
+                                        </div>
+                                      </ng-template>
+                                        </div>
+                                </div>
+                                </div>
+                            </section>
+                                <section class="leader-ship"> 
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4 col-md-4 div-center center" *ngFor="let leaderlist of leaders; index as i">
+                                        <p>
+                                            <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png">
+                                           <span class="title-name">{{leaderlist.name}}</span><br>
+                                            <span class="title-info">{{leaderlist.info}}</span><br><br>
+                                            {{leaderlist.desc}}
+                                            
+                                        </p>
+                                        <button class="btn btn-primary" (click)="open(content)">Read More</button>
+
+                                        <ng-template #content let-modal>
+                                            <div class="modal-header">
+                                             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <!-- <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png"> -->
+                                               <span class="title-name">{{leaderlist.name}}</span><br>
+                                                <span class="title-info">{{leaderlist.info}}</span><br><br>
+                                                {{leaderlist.desc}}
+                                                
+                                            </p>
+                                        </div>
+                                      </ng-template>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                        </ng-template>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <div [ngbNavOutlet]="nav"></div>
+   
+
+</section>

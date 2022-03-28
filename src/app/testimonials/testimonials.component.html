@@ -1,0 +1,57 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-client.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>TESTIMONIALS</h1>
+                    <h6>We value loyalty, creativity and productivity with results</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-sm-12 col-md-10 div-center center">
+                <p class="running-text">
+                    A great leader's courage to fulfill his vision comes from passion, not position.
+                </p>
+                <p>
+                    At ARKEDGE, we all aspire to be tomorrow's leader. Individually we are pathfinders and collectively we are a doer (achiever).
+                    <br>
+                    We are passionate about everything that we do and so do it the best way.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-info">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12" *ngFor="let info of testimonials; index as i">
+                <p>
+                    <span class="span">
+                        <img class="div-{{i+1}}" src="assets/images/leadership/person{{i+1}}.png" align="{{info.align}}">
+                        <span class="title-name">{{info.name}}</span>
+                        <span class="title-info">{{info.info}}</span>
+                    </span>
+                    
+                    <span class="v-text-align">
+                        <blockquote>
+                            <p>
+                                {{info.desc}}
+                            </p>
+                        </blockquote>
+                    </span>
+                </p>
+               
+            </div>
+        </div>
+    </div>
+</section>

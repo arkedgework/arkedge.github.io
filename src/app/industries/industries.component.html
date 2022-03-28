@@ -1,0 +1,67 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-industries.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>Industries</h1>
+                    <h6>Transforming industries with smarter ways</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-advance-solution">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12 div-center center">
+                <p class="running-text">
+                    ARKEDGE technologies approaches each business as an individual so
+                    that we can provide you with IT solutions that suit your needs.
+                    We offer holistic solutions, consisting of different offerings.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-industy-info">
+    <div class="container">
+        <div class="row">
+            <!-- <div *ngFor="let data of industryInfo" class="col-lg-4 col-md-4 col-sm-12 col">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <i class="icon icon-large">
+                            <svg focusable="false">
+                                <use attr.xlink:href="#{{data.icon}}"></use>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{data.title}}</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12 section-sevices center">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="icon-circle {{item.color}}">
+                            <i class="icon icon-medium">
+                                <svg focusable="false">
+                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <h5>{{item.title}}</h5>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,128 @@
+$randomBg:#c3d04e, #8778d9, #ffab00, #ff5630, #02b8d9, #5391ee;
+
+@for $i from 1 through length($randomBg) {
+	.div-#{$i} {
+		background-color: nth($randomBg, $i);
+	}
+}
+
+section {
+    padding: 70px 0 55px;
+}
+
+.testimonials-info{
+	padding:0;	
+
+	.col-sm-12{
+		border-top:1px dotted #af9090;
+		padding-bottom:40px;
+	&:nth-child(even){
+		.span{
+			float:right;
+			margin:0 0 0 40px;
+		}
+	}}
+
+p{
+	padding:40px 50px 0;
+	font-family: "Poppins", sans-serif;
+	a{
+		color:#214f7a;
+		font-weight:bold;
+	}
+	.span{
+		float:left;
+		margin: 0 40px 0 0;
+	}
+
+img{
+	width:50%;
+	border-radius: 50%;
+	display:block;
+	margin:0 auto 30px;
+
+}
+
+.title-name{
+	font-size:25px;
+	font-weight:bold;
+	text-align: center;
+	display:block;
+}
+.title-info{
+	font-size:16px;
+	color:#5C5C5C;
+	text-align: center;
+	display:block;
+}
+
+.v-text-align{
+	height:100%;
+	display: flex;
+	p{
+		align-self: center;
+	}
+}
+
+}
+.btn{
+	padding:10px;
+	border-radius:5px;
+	font-size:12px;
+}
+
+blockquote {
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-bottom:-30px;
+	position: relative; 
+	margin: 0 auto; 
+	padding-left: 0.4em; 
+	}
+	
+	blockquote p:before { 
+		content: "\201C";
+		font-weight: bold;
+		font-size:100px;
+		color:#eab119;
+		position: absolute; 
+		top: 50px;
+		left: 0px; 
+		font-family: 'Georgia'; 
+	} 
+	blockquote p:after { 
+		content: "\201D";
+		font-weight: bold;
+		font-size:100px;
+		color:#eab119;
+		position: absolute; 
+		bottom:-25px;
+		right: 0px; 
+		font-family: 'Georgia'; 
+	}
+
+}
+
+@media (max-width: 576px){
+	.testimonials-info{
+		.col-sm-12{
+		  .span{
+				width:100%;
+				margin: 0;
+				float:none;
+				img{
+					margin:0 auto 30px
+				}
+			}
+			.v-text-align{
+				height:auto;
+				display: block;
+				p{
+					align-self: center;
+					float:left;
+				}
+			}
+		}
+	}
+
+}
