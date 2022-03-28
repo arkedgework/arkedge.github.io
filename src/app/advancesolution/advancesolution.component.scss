@@ -1,0 +1,46 @@
+.section-advance-solution{
+    ul{
+        li{
+            a{
+                padding:15px;
+                margin-bottom:5px;
+                background:#e5e5e5;
+                color:#333333;
+                display:block;
+                &.active{
+                    background:#214f7a;
+                    color:#fff;
+                }
+              }
+        }
+    }
+}
+
+section:nth-child(odd){
+    background:#e5f0fa;
+}
+
+img{
+    width: 100%;
+ }
+
+.info{
+    .panel{
+        padding:20px;
+        background:#e5f0fa;
+    }
+    p{
+       position: relative;
+       padding-right:125px;
+       i{
+           position: absolute;
+           right:0;
+           top:0;
+       }
+    }
+    .panel-heading{
+        h6{
+            font-weight:bold;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.blue{
+    color:#0070c0;
+}
+.red{
+    color:#ff0000;
+}
+.green{
+    color: #70ad47;
+}
+.section-staffing{
+    padding:0 0 70px;
+    p{
+        margin:0;
+        padding:0;
+    }
+
+
+.col-sm-12{
+    &:not(:first-child){
+        padding-top:60px;
+    }  
+}
+.section-header{
+    background:#e5f0fa;
+    padding:60px 0;
+    margin-bottom:60px;
+    margin-top:-70px;
+}
+
+.panel{
+    position:relative;
+    margin-bottom:60px;
+    &.left{
+        padding-right:175px;
+         .icon-circle{
+            right:0;
+        }
+    }
+    &.right{
+        padding-left:175px;
+         .icon-circle{
+            left:0;
+        }
+    }
+    .icon-circle{
+        position: absolute;
+        top:0;
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        background:#e5f0fa;
+        i{
+            line-height: 135px;
+            margin: 0 auto;
+            display: table;
+            svg{
+                fill:#214f7a;
+            }
+        }
+    }
+}
+}
+
+
+ul.info-bar{
+    margin-left: 5px;
+    align-self: center;
+    li{
+        padding: 0 0 10px 20px;
+        list-style: none outside;
+        font-size: 16px;
+        position: relative;
+        font-weight: bold;
+        &::before{
+            content: " ";
+            background: #214f7a;
+            font-weight: bold;
+            position:absolute;
+            top:8px;
+            left:0px;
+            width: 10px;
+            height:10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        p{
+            font-weight: normal;
+        }
+    }
+}
+
+.services-provided{
+    padding-top:0;
+    .panel{
+        position: relative;
+        border:1px solid #ccc;
+        margin-top:30px;
+        .panel-footer{
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            .btn{
+                background:rgba(255, 255, 255, 0.8);
+                color:#555;
+                display: block;
+                margin:0 auto;
+            }
+        }
+    } 
+
+}
+
+.comp-methodology{
+    ul.info-bar{
+        li{
+           &::before{
+               background:none;
+               border:1px solid #214f7a;
+           }
+        }
+    } 
+}
+
+.best-staffing, .values{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.features{
+   .info-bar{
+    margin-left:20px;
+   }
+   &+ .features{
+       margin-top:20px;
+   }
+}
+
+

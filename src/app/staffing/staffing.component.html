@@ -1,0 +1,337 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-projectengineering.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>IT STAFFING & TRAINING</h1>
+                    <h6>{{tabName}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="manage-service-tab inner-nav-tab">
+    <div class="tab-navigation">
+        <div class="col-sm-12">
+            <div class="container">
+                <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
+                    <li [ngbNavItem]="1">
+                        <a ngbNavLink (click)="title(1)">STAFFING SERVICES</a>
+                        <ng-template ngbNavContent>
+                            <section class="section-staffing">
+                                <div class="col-sm-12 center section-header">
+                                    <h3>People Process Technology</h3>
+                                    <h6>Proven methodology, profound impact & sustainable results</h6>
+                                    </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2>Let’s start building your future with us.</h2>
+                                            <p class="running-text">
+                                                We understand every organization has its Unique Staffing requirements and they need the right people to succeed. ARKEDGE supports short-term, seasonal, high-volume and niche contract requirements. We also provide contract-to-hire talent for project-based support with the option to hire our contractors as permanent employees or find the permanent top talent your company needs today. By listening to our clients’ business needs, we have gained a unique perspective into how we can help. </p>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                               <ul class="info-bar">
+                                                       <li *ngFor="let item of ourProcess">
+                                                          {{item.title}}
+                                                           <p>
+                                                               {{item.desc}}
+                                                               <br>
+                                                               {{item.desc2}}
+                                                           </p>
+                                                       </li>
+                                                   </ul>
+                                               </div> 
+                                               
+                                               <div class="col-sm-12 center">
+                                               <h2 class="blue">
+                                                Precision Recruiting<br>
+                                                <h5 class="blue small-text">Going exceptional lengths, to hire the best</h5>
+                                               </h2>
+                                                <h2 class="green">Searching for exceptional talent to scale new peaks?</h2>
+                                                <h1 class="red">YOU NEED THE RIGHT PEOPLE TO SUCCEED</h1>
+                                               </div>
+
+                                        <div class="col-sm-12">
+                                         <h6>Permanent Staffing</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of staffingSolution">
+                                                   {{item.title}}
+                                                    <p>
+                                                        {{item.desc}}
+                                                        <br>
+                                                        {{item.desc2}}
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-12"> 
+                                            <h6>Temporary Staffing</h6>
+                                            <p>
+                                                In an increasingly competitive business world, manpower requirements pose a challenge that requires a careful allocation of resources to overcome. Recruitments come with a host of resource intensive issues such as Sourcing, Appointing, Compensation, Payroll Management, Statutory Compliances, Employee Benefits and Exit Management.
+                                                <br><br>
+                                                Temporary Staffing, or Temping, is an effective solution to these hassles. It basically defines a 3-way relationship between the Employer, Temping Consultant and Employee. Within this definition, we manage and administer projects on behalf of companies that require personnel for short term contracts of 6 months to a 2 year contract term. We cater to companies involved in major projects and organizations that may be facing increased workload or headcount. We assist such clients by recruiting staff for the project and overseeing the administrative and logistic requirements throughout the agreed term.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="services-provided">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 center">
+                                            <h1>Service <span class="heading-highlight">we provide</span></h1>
+                                        </div>
+                                        <div *ngFor="let data of servicesProvided; index as i" class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="panel" (click)="open(content)">
+                                                <a><img src="assets/images/managservice/staffing/staffing-service-{{i+1}}.jpg"></a>
+                                                <div class="panel-footer">
+                                                    <button type="submit" class="btn btn-primary" >{{data.title}}</button>
+                                                </div>
+                                               
+                                            </div>
+                            
+                                            <ng-template #content let-modal>
+                                                <div class="modal-header"> 
+                                                    <h4 class="modal-title">{{data.title}}</h4>
+                                                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body fix-height"> 
+                            
+                                                    <div class="panel">
+                                                      <div class="panel-body">
+                                                            <p>{{data.desc}}</p>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </ng-template>
+                                        </div>
+                                    </div>
+
+                                    <div class="row best-staffing">
+                                        <div class="col-sm-6">
+                                            <img src="assets/images/managservice/staffing/staffing-service-7.jpg">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img src="assets/images/managservice/staffing/staffing-service-8.jpg">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-12 values">
+                                            <img src="assets/images/managservice/staffing/staffing-service-9.jpg">
+                                        </div>
+
+                                        <div class="col-sm-12 features">
+                                            <h6 class="red">Key Differentiators</h6>
+                                            <ul class="info-bar">
+                                                <li> <span class="red">Single Point of Contact</span> with dedicated recruiting team</li>
+                                                <li> <span class="red">Tailored Client Engagement Strategy</span> with process standardization, resource optimization and SLA management</li>
+                                                <li> <span class="red">Established Talent Retention Program</span> that outlines the candidate’s commitment, key deliverables and expectations to ensure continuous consultant engagement at all phases of project needs</li>
+                                                <li> <span class="red">Extensive Technical Screenings in All Technical Platforms</span></li>
+                                                <li> <span class="red">Large, Screened and Qualified Consultant Database that Goes Beyond Job Boards</span></li>
+                                                <li> <span class="red">National Coverage with Presence in 25 cities across 10 States</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12 features">
+                                            <h6>Our clients</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of clients">
+                                                    {{item.title}}
+                                                    <p>
+                                                        {{item.desc}}
+                                        
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                 
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                        <a ngbNavLink (click)="title(2)">STAFFING INDUSTRIES</a>
+                        <ng-template ngbNavContent>
+                            <section class="section-staffing">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text">
+                                                We ensure excellence in service through understanding of our client's business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:
+                                            </p>
+                                            </div>
+                                        <div class="col-sm-12">
+                                         <h6>Staffing Services</h6>
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of industriesSolution">
+                                                   {{item.list}}
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="3">
+                        <a ngbNavLink (click)="title(3)">IT TRAINING</a>
+                        <ng-template ngbNavContent>
+                            <section class="section-staffing">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text">
+                                                Having been in the corporate training domain for almost two decades now, we understand each business' requirements with ease and develop customized training programs which will suit the client's needs. Arkedge offers all-inclusive corporate training services to cater to the IT training needs of your organization. Some of the key services we offer include -</p>
+                                            </div>
+
+                                            <div class="col-lg-11 col-md-11 col-sm-12 div-center">
+                                                <!-- <h6>Proven methodology, profound impact & sustainable results</h6> -->
+                                                <div class="panel {{item.position}}" *ngFor="let item of training">
+                                                    <div class="panel-heading">
+                                                        <div class="icon-circle">
+                                                            <i class="icon icon-large">
+                                                                <svg focusable="false">
+                                                                    <use attr.xlink:href="{{item.icon}}"></use>
+                                                                </svg>
+                                                            </i>
+                                                        </div>
+                                                        <h5>{{item.title}}</h5>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <p>{{item.desc}}</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        <div class="col-sm-12 center">
+                                            <h1>COURSES</h1>
+                                            <p>
+                                                Arkedge offers a range of corporate training programs and these programs can be customized to meet the requirements of your organization. <br>
+                                                We ensure excellence in service through understanding of our client's business and their unique requirements. Due to our close relationships and constant interactions with clients, we have developed solid understanding and insight in our focus industries that include:
+                                            </p>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <!-- <table class="table table-striped table-bordered">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Course Type</th>
+                                                    <th>Course Description</th>
+                                                    <th>Duration</th>
+                                                    <th>Details</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr *ngFor="let data of courses">
+                                                    <td>{{data.coursetype}}</td>
+                                                    <td>{{data.courseDescription}}</td>
+                                                    <td>{{data.courseDuration}}</td>
+                                                    <td><a href="assets/arkege.pdf" download>View Details</a></td>
+                                                  </tr>
+                                                </tbody>
+                                                </table> -->
+
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Certification Programs</th>
+                                                        <th>Information and Communication Technologies Training</th>
+                                                        <th>Management Development</th>
+                                                       </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let data of courses">
+                                                        <td>{{data.coursetype}}</td>
+                                                        <td>{{data.infoCommTech}}</td>
+                                                        <td>{{data.mgdev}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                    </table>
+
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <h2>What Makes Us Pioneers in the Area of Corporate IT Training?</h2>
+                                            <h6>Outsouce2india is among the crème-de-la-crème companies out there which offers peerless corporate IT training for SMEs as well as global corporates. Some of the key reasons to choose us include -</h6>
+                                            </div>
+                                        <div class="col-sm-12">
+                                            <ul class="info-bar">
+                                                <li *ngFor="let item of whyTraining">
+                                                   {{item.title}}
+                                                    <div class="comp-methodology"> 
+                                                       <p> {{item.desc}}</p>
+                                                        <ul class="info-bar">
+                                                            <li *ngFor="let li of item.list">
+                                                               {{li.title}}
+                                                             </li>
+                                                        </ul>
+                                                     
+                                                      
+                                                    </div>
+                                                </li>
+                                            </ul> </div>
+
+                                      
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink (click)="title(4)">PROGRAM SCHEDULE</a>
+                        <ng-template ngbNavContent>
+                            <section class="section-staffing">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="running-text">
+                                                Arkedge offers a range of corporate training programs and these programs can be customized to meet the requirements of your organization. </p>
+                                            </div>
+                                        <div class="col-sm-12">
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Course Title</th>
+                                                    <th>Location</th>
+                                                    <th>Target Date</th>
+                                                    <th>Details</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr *ngFor="let data of programCalendar">
+                                                    <td>{{data.courseTitle}}</td>
+                                                    <td>{{data.location}}</td>
+                                                    <td>{{data.targetDate}}</td>
+                                                    <td><a href="assets/arkege.pdf" download>View Details</a></td>
+                                                  </tr>
+                                                </tbody>
+                                                </table>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </section>
+                        </ng-template>
+                    </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div [ngbNavOutlet]="nav"></div>
+</section>

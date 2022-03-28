@@ -1,0 +1,30 @@
+.client-speak, .client-info {
+    padding:70px 0;
+}
+
+.client-info{
+    padding-bottom:20px;
+    .panel{
+        margin-bottom:50px;
+        border: 1px solid rgba(33, 79, 122, 0.1);
+        padding: 20px;
+    }
+}
+.client-speak{
+    background:#e5f0fa;
+    h1{
+        margin-bottom:25px;
+    }
+}
+
+.modal-body{
+    h6{
+        font-weight: bold;
+    }
+    a{
+        color:#276caa;
+        &:hover{
+            color:#000;
+        }
+    }
+}

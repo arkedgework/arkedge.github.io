@@ -1,0 +1,67 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-client.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                    <h1>CLIENT TELE</h1>
+                    <h6>We value loyalty, creativity and productivity with results</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="client-info">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let data of clientInfo; index as i" class="col-lg-3 col-md-3 col-sm-12">
+                <div class="panel" (click)="open(content)">
+                   <div class="panel-body">
+                       <a><img src="assets/images/logo{{i+1}}.png"></a>
+                    </div>
+                 </div>
+                 <ng-template #content let-modal>
+                    <div class="modal-header">
+                        <h4 class="modal-title">{{data.title}}</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                <div class="modal-body">
+                    
+                    <div class="panel">
+                        <div class="panel-header">
+                            <img src="assets/images/logo{{i+1}}.png">
+                         </div>
+                        <div class="panel-body">
+                            <p>{{data.desc}}</p>
+                            <a href="{{data.url}}" target="_blank">{{data.url}}</a>
+                         </div>
+                    </div>
+                </div>
+              </ng-template>
+             </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="client-speak">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <h1>Client Speaks</h1>
+                <p>Ever-growing demand for Web Application solutions is driven by rapidly changing market conditions and
+                    technology progress. To streamline your business, we address those issues with our Internet and
+                    Intranet solutions. In addition we also provide you web / animation design services.</p>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zmEG-5zEmPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+        </div>
+    </div>
+</section>
+
+

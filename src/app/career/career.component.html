@@ -1,0 +1,114 @@
+<!-- <app-inner-page-header></app-inner-page-header> -->
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-career.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+        <h1>Career @ Arkedge</h1>
+        <h6>come and join us our family...</h6>
+    </div></div></div>
+    </div>
+</div>
+<section class="section-career">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 div-center">
+        <h6 class="center career">Arkedge Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.
+        </h6>
+        </div>
+       <div class="col-lg-6 col-md-6 col-sm-12 career-info">
+            <div class="panel">
+                    <div class="panel-heading">
+                       <h6>How We Hire</h6>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <b>Internal sources</b> <br>
+                            Transfer, Promotion
+                            <br><br>
+                            <b>External sources</b> <br>
+                            Employment agencies,<br> Management- Education institutions, <br>Job posting
+                        </p>
+                    </div>
+             </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 career-info">
+            <div class="panel">
+                    <div class="panel-heading">
+                       <h6>Employee Benefits</h6>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Retirement savings funds (provident and pension funds)<br>
+                            Group life insurance benefits<br>
+                            Disability insurance <br>
+                            Health benefits<br>
+                            *Flexi work hours/Work from Home <br>
+                            *Paid and unpaid parental leave
+                        </p>
+                    </div>
+             </div>
+        </div>
+
+        <div class="col-sm-12">
+            <h6 class="text-wrap">If you are interested in working in a fast-paced, challenging environment, Below are the Current Openings for open positions.</h6>
+
+            <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th>Job Code</th>
+                    <th>Job Title</th>
+                    <th>Location</th>
+                    <th>Target Date</th>
+                    <th>Details</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of career">
+                    <td>{{data.jobcode}}</td>
+                    <td>{{data.jobtitle}}</td>
+                    <td>{{data.location}}</td>
+                    <td>{{data.targetDate}}</td>
+                    <td><a href="assets/arkege.pdf" download>View Details</a></td>
+                  </tr>
+                </tbody>
+                </table>
+
+            </div>
+
+
+        <div class="col-sm-12 col-md-10 div-center">
+           <form>
+            <h2 class="center">Post your profile here...</h2>
+                <div class="row form-group">
+                    <div class="col">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="yourMail" placeholder="Your Mail" name="yourMail">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                    </div>
+                    <div class="col custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="customFile" name="filename">
+                        <label class="custom-file-label" for="customFile">Attachment</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                <button type="submit" class="btn btn-warning">RESET</button>
+            </form>
+        </div>
+    </div>
+</div>    
+</section>
