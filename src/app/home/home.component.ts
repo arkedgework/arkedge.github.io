@@ -14,7 +14,7 @@ export class HomeComponent {
   showNavigationArrows = false;
 
   slideConfig = {
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
@@ -120,7 +120,7 @@ export class HomeComponent {
           {name: 'Data Migration & Consolidation'},
           {name: 'Spend Analysis'}
         ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        description: 'Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The goal of data management is to help people, organizations, and connected things optimize the use of data within the bounds of policy and regulation.',
         icon: '#icon_mgmt'
       },
       {
@@ -132,7 +132,7 @@ export class HomeComponent {
           {name: 'UX/UI Development'},
           {name: 'Software Testing & QA'}
         ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        description: 'Software engineering is a concept in and of itself, but to better understand it, you need to know what each part of the term means before you can fully understand how they operate together. It can be difficult to understand, even though it does seem straightforward.',
         icon: '#icon_softEngg'
       },
       {
@@ -144,7 +144,7 @@ export class HomeComponent {
           {name: 'Courses'},
           {name: 'Program Calendar'}
         ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        description: `Develop the skills your workforce needs to compete and win. Our curated learning pathways help close knowledge gaps and drive measurable outcomes. Whether you're a team of 5 or 50,000, We offers flexible options to work with your eLearning goals and budgets.`,
         icon: '#icon_training'
       },
     ];
@@ -163,8 +163,8 @@ export class HomeComponent {
       description: 'Offers cutting edge technology solutions for specific business needs'
     },
     {
-      title: 'WITH HUGE',
-      title_2: 'ANDPERFORMANCE FEATURE UPDATE',
+      title: 'WITH HUGE AND',
+      title_2: 'PERFORMANCE FEATURE UPDATE',
       description: 'Customized Solutions For Dynamic Business'
     }
   ];
