@@ -2,6 +2,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { SharedService } from '../shared.service';
 import { CreateSpace } from '../space.pipe';
 import { NgbModalConfig, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productDetail',
@@ -21,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
 
   tabIndex;
   tabName;
-  constructor(private sharedservice: SharedService, config: NgbModalConfig, private modalService: NgbModal) { }
+  constructor(private sharedservice: SharedService, config: NgbModalConfig, private modalService: NgbModal,private router: Router,) { }
 
   revenueMaximizer = [
     {
@@ -86,7 +87,9 @@ export class ProductDetailComponent implements OnInit {
     }
   ];
 
-
+  inquery = function() {
+    this.router.navigateByUrl('/Contactus', {skipLocationChange: true});
+  };
   open(content) {
     this.modalService.open(content, { windowClass : 'staffing-popup'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -112,11 +115,11 @@ export class ProductDetailComponent implements OnInit {
 
   title(i) {
     if (i === 1) {
-      this.tabName = 'RevenueMaximizer';
+      this.tabName = 'Revenue Maximizer';
     } else if (i === 2) {
-      this.tabName = 'StudioEdge';
+      this.tabName = 'Studio Edge';
     } else if (i === 3) {
-      this.tabName = 'DataFlow';
+      this.tabName = 'Data Flow';
     }
   }
 
@@ -148,13 +151,28 @@ export class ProductDetailComponent implements OnInit {
       }
     ]
   };
-  products = [
-    {title: 'Looking for automation to drive performance and profitability'},
-    {title: 'helps enterprises rapidly build the infrastructure and capabilities'},
-    {title: 'Arkedge unified approach — encompassing strategy, software and managed services '},
-    {title: 'Looking for automation to drive performance and profitability'},
-    {title: 'helps enterprises rapidly build the infrastructure and capabilities'},
-
+  revenuemaximizerProd = [
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
   ];
-
+  studioedgeProd = [
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
+  ];
+  dataflowProd = [
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+    {title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
+  ];
 }
