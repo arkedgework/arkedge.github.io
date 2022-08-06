@@ -112,8 +112,13 @@ section{
 	&.btn-primary{
 		background:#276caa;
 	}
-	&:hover{
-		opacity:0.8;
+	&:hover, &:focus{
+		background:#094276;
+	}
+	&.btn-warning{
+		&:hover, &:focus{
+			background:#f7cd51;
+		}
 	}
 }
 svg {

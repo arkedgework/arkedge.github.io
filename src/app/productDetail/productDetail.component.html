@@ -18,32 +18,36 @@
             <div class="container">
                 <ul ngbNav #nav="ngbNav" [activeId]="tabIndex" class="nav-tabs">
                     <li [ngbNavItem]="1">
-                        <a ngbNavLink (click)="title(1)">RevenueMaximizer</a>
+                        <a ngbNavLink (click)="title(1)">Revenue Maximizer</a>
                         <ng-template ngbNavContent>
                             <section class="product-detail">
                                 <div class="container">
-                                   
-                                        <div class="row">
+                                   <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                                <h2>RevenueMaximizer</h2>
+                                                <h2>Revenue Maximizer</h2>
                                                 <p>
                                                     A SaaS (software-as-a-service) platform that helps healthcare provider to maximize their revenue potential by finding billing charge anomalies early in revenue cycle. The platform amalgamates advanced AI models with powerful rule-based engine to detect hidden and complex coding relationships and find the missing charges in the patient billing system. Some of the key feature offering of the platform:
                                                 </p>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                       <ul class="info-bar">
+                                                               <li *ngFor="let item of revenueMaximizer">
+                                                                  {{item.title}}
+                                                                </li>
+                                                           </ul>
+                                                       </div> 
+
+                                                       <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-primary">Demo</button>
+                                                        <button type="submit" class="btn btn-primary" (click)="inquery();">Inquiry</button>    
+                                                     </div>
+                                              </div>
                                              </div>
-                                
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <img src="assets/images/products/revenuemaximizer_big.png">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                               <ul class="info-bar">
-                                                       <li *ngFor="let item of revenueMaximizer">
-                                                          {{item.title}}
-                                                        </li>
-                                                   </ul>
-                                               </div> 
-                                      </div>
+                                        
                                       <section class="section-product">
                                         <div class="container">
                                             <div class="row">
@@ -53,8 +57,8 @@
                                                 </div>
                                                 <div class="col-sm-12">
                                                     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                                                        <div ngxSlickItem *ngFor="let product of products; index as i" class="slide">
-                                                            <img src="assets/images/0{{i+1}}.png" alt="" width="100%">
+                                                        <div ngxSlickItem *ngFor="let product of revenuemaximizerProd; index as i" class="slide">
+                                                            <img src="assets/images/products/slickImg/revenuemaximizer_0{{i+1}}.png" alt="" width="100%">
                                                             <p class="col-sm-12 center">{{product.title}}</p>
                                                         </div>
                                                     </ngx-slick-carousel>
@@ -67,32 +71,37 @@
                         </ng-template>
                     </li>
                     <li [ngbNavItem]="2">
-                        <a ngbNavLink (click)="title(2)">StudioEdge</a>
+                        <a ngbNavLink (click)="title(2)">Studio Edge</a>
                         <ng-template ngbNavContent>
                             <section class="product-detail">
                                 <div class="container">
                                    
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                                <h2>StudioEdge</h2>
+                                                <h2>Studio Edge</h2>
                                                 <p>
                                                     A cutting edge highly scalable Big-Data platform that can help your organization to utilize enormous volume of data and transform them into meaningful business insights in real-time. Platform ingests structured, unstructured and semi-structured data from multiple sources, prepares data with automated workflows, facilitates data discovery, aggregates, manipulates, and generate predictive and description insights through a wide range of complex AI models using massive parallel processing engine. Some of the key feature of platform:
                                                 </p>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                       <ul class="info-bar">
+                                                               <li *ngFor="let item of revenueMaximizer">
+                                                                  {{item.title}}
+                                                                </li>
+                                                           </ul>
+                                                       </div> 
+                                                       <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-primary">Demo</button>
+                                                        <button type="submit" class="btn btn-primary" (click)="inquery();">Inquiry</button>    
+                                                     </div>
+                                              </div>
                                              </div>
                                 
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <img src="assets/images/products/studioedge_big.png">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                               <ul class="info-bar">
-                                                       <li *ngFor="let item of revenueMaximizer">
-                                                          {{item.title}}
-                                                        </li>
-                                                   </ul>
-                                               </div> 
-                                      </div>
+                                       
                                       <section class="section-product">
                                         <div class="container">
                                             <div class="row">
@@ -102,8 +111,8 @@
                                                 </div>
                                                 <div class="col-sm-12">
                                                     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                                                        <div ngxSlickItem *ngFor="let product of products; index as i" class="slide">
-                                                            <img src="assets/images/0{{i+1}}.png" alt="" width="100%">
+                                                        <div ngxSlickItem *ngFor="let product of studioedgeProd; index as i" class="slide">
+                                                            <img src="assets/images/products/slickImg/studioedge_0{{i+1}}.png" alt="" width="100%">
                                                             <p class="col-sm-12 center">{{product.title}}</p>
                                                         </div>
                                                     </ngx-slick-carousel>
@@ -117,33 +126,38 @@
                     </li>
 
                     <li [ngbNavItem]="3">
-                        <a ngbNavLink (click)="title(3)">DataFlow</a>
+                        <a ngbNavLink (click)="title(3)">Data Flow</a>
                         <ng-template ngbNavContent>
                             <section class="product-detail">
                                 <div class="container">
                                    
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                                <h2>DataFlow</h2>
+                                                <h2>Data Flow</h2>
                                                 <p>
                                                     A cloud-based solution that offers flexible data pipeline, starting from sourcing heterogeneous data, to improve data richness index by apply various data transformation stages, including profiling, normalization, classification to generate holistic view of various business insights for downstream consumption including analytics reporting and integration with other systems. 
                                                     Some of the key features that DataFlow product offers are:
                                                 </p>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                       <ul class="info-bar">
+                                                               <li *ngFor="let item of revenueMaximizer">
+                                                                  {{item.title}}
+                                                                </li>
+                                                           </ul>
+                                                       </div> 
+                                                       <div class="col-sm-12">
+                                                       <button type="submit" class="btn btn-primary">Demo</button>
+                                                       <button type="submit" class="btn btn-primary" (click)="inquery();">Inquiry</button>    
+                                                    </div>
+                                                    </div>
                                              </div>
                                 
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <img src="assets/images/products/dataflow_big.png">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                               <ul class="info-bar">
-                                                       <li *ngFor="let item of revenueMaximizer">
-                                                          {{item.title}}
-                                                        </li>
-                                                   </ul>
-                                               </div> 
-                                      </div>
+                                      
                                       <section class="section-product">
                                         <div class="container">
                                             <div class="row">
@@ -153,8 +167,8 @@
                                                 </div>
                                                 <div class="col-sm-12">
                                                     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                                                        <div ngxSlickItem *ngFor="let product of products; index as i" class="slide">
-                                                            <img src="assets/images/0{{i+1}}.png" alt="" width="100%">
+                                                        <div ngxSlickItem *ngFor="let product of dataflowProd; index as i" class="slide">
+                                                            <img src="assets/images/products/slickImg/dataflow_0{{i+1}}.png" alt="" width="100%">
                                                             <p class="col-sm-12 center">{{product.title}}</p>
                                                         </div>
                                                     </ngx-slick-carousel>
