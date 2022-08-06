@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-ourproduct',
@@ -7,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ourproduct.component.scss']
 })
 export class OurproductComponent implements OnInit {
+
   slideConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -44,11 +46,18 @@ export class OurproductComponent implements OnInit {
 
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private sharedservice: SharedService) { }
 
   inquery = function() {
     this.router.navigateByUrl('/Contactus', {skipLocationChange: true});
   };
+
+
+  getUrl(i, title) {
+    this.router.navigateByUrl('/productDetail', {skipLocationChange: true});
+    this.sharedservice.nextMessage(i, title);
+  }
+
 
   ngOnInit() {
   }

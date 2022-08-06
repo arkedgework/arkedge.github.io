@@ -511,10 +511,13 @@ $purple:#787fc2;
 			div{
 				&:first-child{
 					background:#276caa;
+					padding:0px; 
 				}
 				img{
 					align-self: center;
-					padding: 15px 0;
+					width:100%;
+					height:100%;
+					object-fit: cover;
 				}
 				&:nth-child(2){
 					padding:25px;

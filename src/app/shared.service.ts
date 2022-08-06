@@ -5,7 +5,6 @@ import { BehaviorSubject } from 'rxjs';
 export class SharedService {
 
   private urlID = new BehaviorSubject({Id: '1', name: 'title'});
-  debbuger;
   sharedMessage = this.urlID.asObservable();
 
   constructor() { }

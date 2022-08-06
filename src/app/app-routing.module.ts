@@ -21,6 +21,7 @@ import { StaffingComponent } from './staffing/staffing.component';
 import { DatamgmtComponent } from './datamgmt/datamgmt.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { AiComponent } from './ai/ai.component';
+import { ProductDetailComponent } from './productDetail/productDetail.component';
 
 
 
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path: 'Technology', component: TechnologyComponent},
   {path: 'Industries', component: IndustriesComponent},
   {path: 'OurProduct', component: OurproductComponent},
+  {path: 'productDetail', component: ProductDetailComponent},
   {path: 'ManagedServices', component: ManagedserviceComponent},
   {path: 'Company', component: AboutComponent},
   {path: 'Career', component: CareerComponent},
@@ -60,6 +62,7 @@ const routes: Routes = [
     AdvancesolutionComponent,
     HomeComponent,
     OurproductComponent,
+    ProductDetailComponent,
     ManagedserviceComponent,
     CompanyComponent,
     CareerComponent,
