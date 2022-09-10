@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
         {name: 'Ux/UiDevelopment'},
         {name: 'SoftwareTesting & Qa'}
       ]},
-      {name: 'ConsultingSercvices',
+      {name: 'ConsultingServices',
       managedServiceList : [
         {name: 'DataScience'},
         {name: 'InformationSecurity'},

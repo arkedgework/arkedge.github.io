@@ -76,37 +76,37 @@ export class HomeComponent {
       {
         title: 'IT, telecom and software',
         color: 'skyblue',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_telecom'
       },
       {
         title: 'ITES - BPO & KPO',
         color: 'yellow ',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_customerService'
       },
       {
         title: 'Engineering & Manufacturing',
         color: 'orange',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_engineeringMgf'
       },
       {
         title: 'Consumer goods and retail',
         color: 'limegreen',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_retail'
       },
       {
         title: 'Financial services and insurance',
         color: 'purple',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_finervice'
       },
       {
         title: 'Health care & Pharmaceuticals',
         color: 'blue',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        description: '',
         icon: '#icon_healthCare'
       },
     ];
@@ -153,19 +153,25 @@ export class HomeComponent {
 
   banner = [
     {
-      title: 'WE SPECIALIZE IN IMPROVING',
-      title_2: 'OPERATIONAL PERFORMANCE AND IT DELIVERY.',
-      description: 'We do this by improving the way our clients use people, processes and technologies'
+      title: 'Customized Solutions',
+      title_2: 'For Dynamic Business!',
+      description: 'Offers cutting edge technology solutions for specific business needs!'
     },
     {
-      title: 'Experience & expertise of',
-      title_2: 'consulting in technology & operations.',
-      description: 'Offers cutting edge technology solutions for specific business needs'
+      title: 'Cloud & DevOps Tech Services to',
+      title_2: 'keep your business ahead of the curve!',
+      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
     },
     {
-      title: 'WITH HUGE AND',
-      title_2: 'PERFORMANCE FEATURE UPDATE',
-      description: 'Customized Solutions For Dynamic Business'
+      title: 'Designing digital-first ',
+      title_2: 'technologies for the Future Growth!',
+      description: `We create digitally connected innovative solutions to enable Business Growth with emerging technologies!
+      Talk to our expert`
+    },
+    {
+      title: 'Product Engineering & Experience',
+      title_2: 'Design for delightful user experience!',
+      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
     }
   ];
 
@@ -268,6 +274,10 @@ projects = [
 
 btnClick = function() {
     this.router.navigateByUrl('/Contactus', {skipLocationChange: true});
+};
+
+viewMore = function() {
+  this.router.navigateByUrl('/Industries', {skipLocationChange: true});
 };
 
 btnOurProduct = function() {

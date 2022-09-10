@@ -21,38 +21,110 @@ export class IndustriesComponent implements OnInit {
     {
       title: 'IT, telecom and software',
       color: 'skyblue',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_telecom'
     },
     {
       title: 'ITES - BPO & KPO',
       color: 'yellow ',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_customerService'
     },
     {
       title: 'Engineering & Manufacturing',
       color: 'orange',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_engineeringMgf'
     },
     {
       title: 'Consumer goods and retail',
       color: 'limegreen',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_retail'
     },
     {
       title: 'Financial services and insurance',
       color: 'purple',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_finervice'
     },
     {
       title: 'Health care & Pharmaceuticals',
       color: 'blue',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+      description: ' ',
       icon: '#icon_healthCare'
+    },
+    {
+      title: 'Consumer Packaged Goods',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Energy & Utilities',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Financial Services',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Government & Nonprofit',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Industrial Manufacturing',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Media & Technology',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Oil & Gas',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Pharma, Health & Life Sciences',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Retail',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Technology',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Telecom',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_healthCare'
+    },
+    {
+      title: 'Travel & Hospitality',
+      color: 'blue',
+      description: ' ',
+      icon: '#icon_travel'
     },
   ];
 
