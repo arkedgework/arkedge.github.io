@@ -158,8 +158,8 @@ export class HomeComponent {
       description: 'Offers cutting edge technology solutions for specific business needs!'
     },
     {
-      title: 'Cloud & DevOps Tech Services to',
-      title_2: 'keep your business ahead of the curve!',
+      title: 'Cloud & DevOps Tech Services to keep your business ahead of the curve!',
+      title_2: '',
       description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
     },
     {
@@ -169,8 +169,8 @@ export class HomeComponent {
       Talk to our expert`
     },
     {
-      title: 'Product Engineering & Experience',
-      title_2: 'Design for delightful user experience!',
+      title: 'Product Engineering & Experience Design for delightful user experience!',
+      title_2: '',
       description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
     }
   ];
