@@ -1,6 +1,6 @@
 footer {
     background: #172947;
-    padding: 35px 0 15px;
+    padding: 35px 0 0px;
     .logo {
         margin-bottom: 15px;
     }
@@ -62,16 +62,18 @@ footer {
         }
     }
     .copyright {
+        background:#0d1a34;
+        p{
+        text-align: center;
         color: #ffffff;
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        padding:0;
+        padding:5px 0;
+        margin:0;
         font-size:12px;
-    span {
-        float: left;
-        margin-right: 10px;
-     }}
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        }
+   }
      .map{
         img{
         max-width: 100%;

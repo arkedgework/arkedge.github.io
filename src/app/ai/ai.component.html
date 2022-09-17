@@ -264,7 +264,7 @@
               </td>
               <td>
                 <span class="bg-tringle bg-{{ i + 1 }}"></span>
-                <ul class="info-bar">
+                <ul class="info-bar auto-level">
                   <li *ngFor="let infokey of level.infokeys">
                     {{infokey.infokey}}
                   </li>
@@ -283,8 +283,7 @@
     <div class="row">
       <div class="col-sm-12 div-center a-b-p">
         <p class="center">
-         <span class="running-text">SCALE PROCESSES, NOT TASKS</span><br>
-          SIMPLY EASIER
+         <span class="running-text">SCALE PROCESSES, NOT TASKS</span>
         </p>
       </div>
     </div>
@@ -329,7 +328,7 @@
   </div>
 </section>
 
-<section>
+<section class="tab-section">
   <div class="main-tabber-nav">
     <a href="javascript:void(0)" (click)="onClick(1)" [ngClass]="{'active': tab==='tab1'}">BY FUNCTION</a>
     <a href="javascript:void(0)" (click)="onClick(2)" [ngClass]="{'active': tab==='tab2'}">BY INDUSTRY</a>
@@ -338,6 +337,7 @@
 
 <section class="section-ai inner-nav-tab" [ngClass]="{'active': tab==='tab1'}">  
 <div class="tab-navigation">
+  <div class="center-div">
     <div class="col-sm-12">
       <div class="container">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
@@ -347,7 +347,7 @@
                   <use xlink:href="#icon_Functionfinace"></use>
                 </svg>
               </i>
-              Finance & Accounting</a>
+              Finance</a>
             <ng-template ngbNavContent>
 
               <section>
@@ -371,7 +371,7 @@
                   <use xlink:href="#icon_functionit"></use>
                 </svg>
               </i>
-              Information Technology</a>
+              Technology</a>
             <ng-template ngbNavContent>
               <section>
                 <div class="container">
@@ -581,11 +581,13 @@
       </div>
     </div>
   </div>
+  </div>
   <div [ngbNavOutlet]="nav" class="mt-4"></div>
 </section>
 
 <section class="section-ai inner-nav-tab" [ngClass]="{'active': tab==='tab2'}">  
 <div class="tab-navigation">
+  <div class="center-div">
     <div class="col-sm-12">
       <div class="container">
         <ul ngbNav #navIn="ngbNav" [(activeId)]="active" class="nav-tabs">
@@ -595,7 +597,7 @@
                   <use xlink:href="#icon_functionbank"></use>
                 </svg>
               </i>
-              Banking & Financial</a>
+              Banking</a>
             <ng-template ngbNavContent>
 
               <section>
@@ -619,7 +621,7 @@
                   <use xlink:href="#icon_functionhealth"></use>
                 </svg>
               </i>
-              Healthcare & Pharma</a>
+              Healthcare</a>
             <ng-template ngbNavContent>
               <section>
                 <div class="container">
@@ -785,7 +787,7 @@
                   <use xlink:href="#icon_functionenergy"></use>
                 </svg>
               </i>
-              Energy & Utilities</a>
+              Energy</a>
             <ng-template ngbNavContent>
               <section>
                 <div class="container">
@@ -855,7 +857,7 @@
                   <use xlink:href="#icon_functionindustry"></use>
                 </svg>
               </i>
-              Travel & Hospitality</a>
+             Hospitality</a>
             <ng-template ngbNavContent>
               <section>
                 <div class="container">
@@ -921,6 +923,7 @@
         </ul>
       </div>
     </div>
+  </div>
   </div>
   <div [ngbNavOutlet]="navIn" class="mt-4"></div>
 </section>
