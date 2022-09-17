@@ -37,6 +37,9 @@ ul.info-bar {
   table{
     border:1px solid #dee2e6;
     border-top:none;
+    td, th{
+      vertical-align: middle;
+    }
     tr{
       td:first-child{
         border-right:1px solid #dee2e6;
@@ -51,31 +54,31 @@ ul.info-bar {
       height: 0; 
       border-top: 70px solid transparent;
       border-bottom: 70px solid transparent;
-      border-left: 60px solid #8edee9;
+      border-left: 60px solid #50a9be;
       background: none !important;
       position: absolute;
       left: -1px;
       top:5px;
     }
     .bg-1{
-      background:#8edee9;
+      background:#50a9be;
     }
     .bg-2{
-      background:#66d0e0;
+      background:#49a2bc;
       &.bg-tringle{
-        border-left: 60px solid #66d0e0;
+        border-left: 60px solid #49a2bc;
       }
     }
     .bg-3{
-      background:#42bcd3;
+      background:#4196ba;
       &.bg-tringle{
-        border-left: 60px solid #42bcd3;
+        border-left: 60px solid #4196ba;
       }
     }
     .bg-4{
-      background:#3bacc0;
+      background:#388cb7;
       &.bg-tringle{
-        border-left: 60px solid #3bacc0;
+        border-left: 60px solid #388cb7;
       }
       .list-no *{
         color:#fff;
@@ -85,9 +88,9 @@ ul.info-bar {
       }
     }
     .bg-5{
-      background:#2b838e;
+      background:#3183b5;
       &.bg-tringle{
-        border-left: 60px solid #2b838e;
+        border-left: 60px solid #3183b5;
       }
       .list-no *{
         color:#fff;
@@ -98,11 +101,26 @@ ul.info-bar {
     }
     .wrap-div{
       display: flex;
+      color:#fff;
+      p{
+        line-height: 22px;
+        margin-bottom: 0px;
+      }
+      h5{
+        color:#fff;
+      }
+    }
+    .auto-level{
+      li{
+      padding: 0 0 5px 20px;
+      font-weight:normal;
+      }
     }
     .bullet-no{
       font-size:50px;
       align-self: center;
       margin-right:15px;
+      margin-left: 15px;
       display: flex;
       width: 100px;
     }
@@ -205,6 +223,10 @@ ul.info-bar {
     margin-bottom:25px;
     p{
       margin:0px;
+      
+    }
+    .running-text {
+      font-size: 24px;
     }
 }
 .our-approch{
@@ -305,6 +327,10 @@ ul.info-bar {
 	}
 }
 
+.tab-section{
+padding:70px 0 25px;
+}
+
 .main-tabber-nav{
   border:2px solid #006a99;
   border-radius: 25px;
@@ -327,6 +353,14 @@ ul.info-bar {
 }
 
 .section-ai{
+  &.inner-nav-tab {
+    .tab-navigation{
+      .center-div{
+        display: table;
+        margin: 0 auto;
+      } 
+    }
+  }
   &:not(.active){
     display:none;
   }
