@@ -11,7 +11,12 @@
                     <button type="submit" class="btn btn-warning" (click)="btnClick();">CONTACT US</button>
                 </div>
                 <div class="info-img">
-                    <img src="assets/images/banner-{{i+1}}-info.png" alt="My image {{i + 1}} description">
+                    <i class="icon icon-big">
+                        <svg focusable="false">
+                            <use attr.xlink:href="{{info.icon}}"></use>
+                        </svg>
+                    </i>
+                   
                 </div>
             </div>
             <div class="picsum-img-wrapper">
@@ -34,8 +39,8 @@
                     rates. <br>So, give us a Oppurtunity to serve you !
                 </h6>
             </div>
-            <div *ngFor="let item of solution" class="col-lg-4 col-md-4 col-sm-12 panel-container">
-                <div class="panel">
+            <div *ngFor="let item of solution; index as i" class="col-lg-4 col-md-4 col-sm-12 panel-container">
+                <div class="panel" (click)="solutionLink(i+1, item.titlelink);">
                     <div class="panel-front {{item.color}}">
                         <div class="panel-heading">
                             <div class="icon-circle circle-bg">

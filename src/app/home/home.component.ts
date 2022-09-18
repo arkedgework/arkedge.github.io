@@ -111,20 +111,9 @@ export class HomeComponent {
       },
     ];
     this.solution = [
-      {
-        title: 'Data Management',
-        color: 'red',
-        list : [
-          {name: 'Cleanse Dataset'},
-          {name: 'Data Mapping & Conversion'},
-          {name: 'Data Migration & Consolidation'},
-          {name: 'Spend Analysis'}
-        ],
-        description: 'Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The goal of data management is to help people, organizations, and connected things optimize the use of data within the bounds of policy and regulation.',
-        icon: '#icon_mgmt'
-      },
-      {
+     {
         title: 'Software Engineering',
+        titlelink: 'ProductEngineering',
         color: 'blue',
         list : [
           {name: 'Product Engineering'},
@@ -136,7 +125,21 @@ export class HomeComponent {
         icon: '#icon_softEngg'
       },
       {
+        title: 'Data Services',
+        titlelink: 'ProductEngineering',
+        color: 'red',
+        list : [
+          {name: 'Data Engineering'},
+          {name: 'Data Management'},
+          {name: 'Data Science'},
+          {name: 'Cloud Computing'}
+        ],
+        description: 'Data Services is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The goal of data management is to help people, organizations, and connected things optimize the use of data within the bounds of policy and regulation.',
+        icon: '#icon_mgmt'
+      },
+      {
         title: 'IT Staffing & Training',
+        titlelink: 'ProductEngineering',
         color: 'green',
         list : [
           {name: 'Staffing Services'},
@@ -155,23 +158,27 @@ export class HomeComponent {
     {
       title: 'Customized Solutions',
       title_2: 'For Dynamic Business!',
-      description: 'Offers cutting edge technology solutions for specific business needs!'
+      description: 'Offers cutting edge technology solutions for specific business needs!',
+      icon:"#icon_banner_1"
     },
     {
       title: 'Cloud & DevOps Tech Services to keep your business ahead of the curve!',
       title_2: '',
-      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
+      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!',
+      icon:"#icon_banner_2"
     },
     {
       title: 'Designing digital-first ',
       title_2: 'technologies for the Future Growth!',
       description: `We create digitally connected innovative solutions to enable Business Growth with emerging technologies!
-      Talk to our expert`
+      Talk to our expert`,
+      icon:"#icon_banner_3"
     },
     {
       title: 'Product Engineering & Experience Design for delightful user experience!',
       title_2: '',
-      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!'
+      description: 'Digital business solutions built for a strong growth with Personal attention of Project Management at Super accessible prices!',
+      icon:"#icon_banner_4"
     }
   ];
 
@@ -287,6 +294,22 @@ btnOurProduct = function() {
 lernmore = function(url) {
   this.router.navigateByUrl('/ManagedServices' , {skipLocationChange: true});
 };
+
+solutionLink = function(i, title){
+  if(title == 'ProductEngineering'){
+    this.router.navigateByUrl('/SoftwareEngineering' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(i, 'ProductEngineering')
+  }
+  else if(title == 'Data Services'){
+    this.router.navigateByUrl('/DataServices' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(1, 'ProductEngineering')
+  }
+  else if(title == 'IT Staffing & Training'){
+    this.router.navigateByUrl('/ItStafingAndServices' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(1, 'ProductEngineering')
+  }
+  
+}
 
 }
 

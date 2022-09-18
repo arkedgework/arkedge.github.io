@@ -51,7 +51,7 @@ const routes: Routes = [
   {path: 'OurHappyClients', component: ClientComponent},
   {path: 'SoftwareEngineering', component: ProjectengineeringComponent},
   {path: 'ItStafingAndServices', component: StaffingComponent},
-  {path: 'ConsultingServices', component: DatamgmtComponent},
+  {path: 'DataServices', component: DatamgmtComponent},
   {path: 'Sitemap', component: SitemapComponent},
   {path: 'ai', component: AiComponent}
 
