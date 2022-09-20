@@ -187,16 +187,14 @@ Allocation`,},
 
   title(i) {
     if (i === 1) {
-      this.tabName = 'Data Science';
+      this.tabName = 'Data Engineering';
     } else if (i === 2) {
-      this.tabName = 'Information Security';
+      this.tabName = 'Data Management';
     } else if (i === 3) {
-      this.tabName = 'Performance Optimization';
+      this.tabName = 'Data Science';
     } else if (i === 4) {
       this.tabName = 'Cloud Computing';
-    } else if (i === 5) {
-      this.tabName = 'Data Management';
-    }
+    } 
   }
 
   slideConfig = {

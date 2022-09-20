@@ -44,6 +44,14 @@
 		z-index:1;
 		transition: all 1s;
 		opacity:0;
+		width:450px;
+		height:450px;
+		.icon-big{
+		svg{
+			width:550px;
+			height:550px;
+		}
+		}
 	}
 	&.active{
 		.carousel-caption{
@@ -202,6 +210,9 @@ $green:#4bbb57;
 				z-index: -1;
 			}
 			&.red{
+				p{
+					color:#fff;
+				}
 				background:url(../../assets/images/1.jpg) no-repeat top center;
 				border-color: $red;
 				.circle-bg{
@@ -230,6 +241,9 @@ $green:#4bbb57;
 			padding-top: 25px;
 			&.red{
 				background-color:$red;
+				p{
+					color:#fff;
+				}
 			}
 			
 			&.blue{
