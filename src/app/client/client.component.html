@@ -18,7 +18,7 @@
             <div *ngFor="let data of clientInfo; index as i" class="col-lg-3 col-md-3 col-sm-12">
                 <div class="panel" (click)="open(content)">
                    <div class="panel-body">
-                       <a><img src="assets/images/logo{{i+1}}.png"></a>
+                       <a><img src="assets/images/clientlogo/logo{{i+1}}.png"></a>
                     </div>
                  </div>
                  <ng-template #content let-modal>
@@ -32,7 +32,7 @@
                     
                     <div class="panel">
                         <div class="panel-header">
-                            <img src="assets/images/logo{{i+1}}.png">
+                            <img src="assets/images/clientlogo/logo{{i+1}}.png">
                          </div>
                         <div class="panel-body">
                             <p>{{data.desc}}</p>

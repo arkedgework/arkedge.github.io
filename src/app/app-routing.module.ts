@@ -39,7 +39,7 @@ const routes: Routes = [
   {path: 'Contactus', component: ContactusComponent},
   {path: 'NewsAndEventUpdate', component: NewsComponent},
   {path: 'WhoWeAre', component: AboutComponent},
-  {path: 'WhyArkedgeTchnologies', component: AboutComponent},
+  {path: 'AboutArkedge', component: AboutComponent},
   {path: 'CentersOfExcellence', component: AboutComponent},
   {path: 'VisionAndMission', component: AboutComponent},
   {path: 'ValueOfExcellence', component: AboutComponent},
