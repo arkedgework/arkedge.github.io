@@ -2217,6 +2217,161 @@ var svgIcons = `\
 </template>
 	</svg>
 
+	<svg id="icon_arrowRight" viewBox="0 0 40 40">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path d="M33.9,39h-28c-2.7,0-5-2.2-5-5V6c0-2.8,2.2-5,5-5h28c2.8,0,5,2.2,5,5v28C38.9,36.8,36.7,39,33.9,39z"/>
+</g>
+<path class="st0" d="M10.8,20L10.8,20c0,0.6,0.4,1,1,1h13.6l-4.6,4.6c-0.4,0.4-0.4,1,0,1.4l0,0c0.4,0.4,1,0.4,1.4,0l7-7l-7-7  c-0.4-0.4-1-0.4-1.4,0l0,0c-0.4,0.4-0.4,1,0,1.4l4.6,4.6H11.8C11.2,19,10.8,19.4,10.8,20z"/>
+<template xmlns="" id="transover-popup-template">
+  <style>
+    .pos_translation {
+      padding-bottom: 3px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .rtl {
+      direction: rtl;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 6px 8px 3px 8px;
+      position: fixed;
+      z-index: 2147483647;
+      top: -1500px;
+      left: 0;
+      box-sizing: content-box;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+
+      /* To fix the following issue:
+      1. Have translate on hover enabled (opposed to translate on click).
+      2. Wisit a website that has a dropdown menu that opens on hover.
+      3. Open the menu.
+      4. Hover over a word within that menu.
+      5. Incidentally move the cursor over the TransOver popup.
+      The hover menu gets closed.
+      */
+      pointer-events: none;
+    }
+
+    .pos_translation {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .from_lang {
+      color: grey;
+      font-size: 0.8em;
+      line-height: 1.2em;
+      margin-top: 2px;
+      margin-bottom: 3px;
+    }
+  </style>
+
+  <main translate="no"/>
+</template></svg>
+
+<svg id="icon_arrowLeft" viewBox="0 0 40 40">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path d="M33.9,39h-28c-2.7,0-5-2.2-5-5V6c0-2.8,2.2-5,5-5h28c2.8,0,5,2.2,5,5v28C38.9,36.8,36.7,39,33.9,39z"/>
+</g>
+<path class="st0" d="M28.2,19H14.6l4.6-4.6c0.4-0.4,0.4-1,0-1.4l0,0c-0.4-0.4-1-0.4-1.4,0l-7,7l7,7c0.4,0.4,1,0.4,1.4,0l0,0  c0.4-0.4,0.4-1,0-1.4L14.6,21h13.6c0.6,0,1-0.4,1-1l0,0C29.2,19.4,28.8,19,28.2,19z"/>
+<template xmlns="" id="transover-popup-template">
+  <style>
+    .pos_translation {
+      padding-bottom: 3px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .rtl {
+      direction: rtl;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 6px 8px 3px 8px;
+      position: fixed;
+      z-index: 2147483647;
+      top: -1500px;
+      left: 0;
+      box-sizing: content-box;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+
+      /* To fix the following issue:
+      1. Have translate on hover enabled (opposed to translate on click).
+      2. Wisit a website that has a dropdown menu that opens on hover.
+      3. Open the menu.
+      4. Hover over a word within that menu.
+      5. Incidentally move the cursor over the TransOver popup.
+      The hover menu gets closed.
+      */
+      pointer-events: none;
+    }
+
+    .pos_translation {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .from_lang {
+      color: grey;
+      font-size: 0.8em;
+      line-height: 1.2em;
+      margin-top: 2px;
+      margin-bottom: 3px;
+    }
+  </style>
+
+  <main translate="no"/>
+</template></svg>
 <symbol id="icon_mgmt" viewBox="0 0 48 48">
 <path d="M44.1 10.8h-3.9v1.5h3.9c1.3 0 2.3 1 2.3 2.3v20.9H1.5V14.7c0-1.3 1-2.3 2.3-2.3h3.9v-1.5H3.9c-2.1 0-3.9 1.7-3.9 3.9v24.8c0 2.1 1.7 3.9 3.9 3.9H14v3.1h-3.1V48h26.3v-1.5h-3.1v-3.1h10.1c2.1 0 3.9-1.7 3.9-3.9V14.7c-.1-2.1-1.8-3.9-4-3.9zM32.5 46.5h-17v-3.1h17v3.1zm14-7c0 1.3-1 2.3-2.3 2.3H3.9c-1.3 0-2.3-1-2.3-2.3v-2.3h44.9v2.3z"/>
   <path d="M37.2 38.7h1.5v1.5h-1.5zm3.1 0h1.5v1.5h-1.5zm3.1 0h1.5v1.5h-1.5zm-9.3-6.2h10.8V34H34.1zm0-3.1h10.8v1.5H34.1zm1.5-3.1h9.3v1.5h-9.3zm3.1-3.1h6.2v1.5h-6.2zM3.1 34.1h15.5v-8.2c.6.3 1.1.5 1.8.7l.7 2.9h5.8l.7-2.9c.7-.2 1.4-.5 2.1-.9l2.6 1.5 4.1-4.1-1.4-2.6c.4-.7.6-1.4.9-2.1l2.9-.7v-5.8l-3-.9c-.2-.7-.5-1.4-.9-2.1l1.5-2.6-4.1-4.1-2.6 1.5c-.7-.4-1.4-.6-2.1-.9L26.9 0h-5.8l-.7 2.9c-.7.2-1.4.5-2.1.9l-2.6-1.5-4.1 4.1L13 8.9c-.4.7-.6 1.4-.9 2.1l-2.9.7v2.1H3.1v20.3zM10.8 13l2.6-.7.1-.4c.2-.9.6-1.8 1.1-2.6l.2-.4-1.4-2.3 2.4-2.4 2.3 1.4.4-.2c.8-.5 1.7-.8 2.6-1.1l.4-.1.7-2.6h3.4l.7 2.6.4.1c.9.2 1.8.6 2.6 1.1l.4.2L32 4.2l2.4 2.4L33 8.9l.2.4c.5.8.8 1.7 1.1 2.6l.1.4 2.6.7v3.4l-2.6.7-.1.4c-.2.9-.6 1.8-1.1 2.6l-.2.4 1.4 2.3-2.4 2.4-2.3-1.4-.4.2c-.8.5-1.7.8-2.6 1.1l-.4.1-.7 2.6h-3.4l-.7-2.6-.4-.1c-.9-.2-1.8-.6-2.6-1.1l-.4-.2-2.3 1.4-2.4-2.4 1.4-2.3-.2-.4c-.5-.8-.8-1.7-1.1-2.6l-.1-.4-2.6-.7V13zm-6.2 2.5h4.6v2.1l2.9.7c.2.7.5 1.4.9 2.1L11.5 23l4.1 4.1 1.4-.8v6.1H4.6V15.5z"/>

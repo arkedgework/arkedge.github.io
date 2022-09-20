@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private sharedservice: SharedService) {
     this.list = [
-        {name: 'WhyArkedgeTchnologies'},
+        {name: 'AboutArkedge'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
         {name: 'TestimonialClientSpeaks'},

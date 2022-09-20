@@ -69,8 +69,8 @@ nav {
             }
         }
         svg{
-            width:20px;
-            height:20px;
+            width:24px;
+            height:24px;
             margin-right:5px;
          }
 
@@ -90,13 +90,14 @@ nav {
              display: none;
              img{
                  max-width: 100%;
-                 height:auto;
+                 height: 150px;
+                 margin-bottom: 5px;
              }
         
              li{
                  &.inner-list{
                     border-top:1px dotted #ccc;
-                    padding:10px 0;
+                    padding:5px 0;
                     float:left;
                     display:block;
                     width:100%;

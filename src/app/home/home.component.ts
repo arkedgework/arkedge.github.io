@@ -45,6 +45,16 @@ export class HomeComponent {
   slideConfig2 = {
     slidesToShow: 2,
     slidesToScroll: 1,
+    nextArrow: `<div class='slick-prev slick-arrow'>  <i class="icon icon-large">
+    <svg focusable="false">
+      <use xlink:href="#icon_arrowLeft"></use>
+    </svg>
+  </i></div>`,
+    prevArrow: `<div class='slick-next slick-arrow'>  <i class="icon icon-large">
+    <svg focusable="false">
+      <use xlink:href="#icon_arrowRight"></use>
+    </svg>
+  </i></div>`,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1500,

@@ -146,10 +146,20 @@ svg:not(:root) {
 	height: 24px;
 }
 .slick-slider {
-	width: 96%;
+	width: calc(100% - 100px);
 	margin: auto;
 	.slick-prev:before, .slick-next:before{
-		color:#000;
+		content:" ";
+	}
+	.slick-arrow{
+		&.slick-prev{
+			left:-45px;
+		}
+		svg{
+			width:40px;
+			height:40px;
+			fill:#276caa;
+		}
 	}
   }
   .section-product{
