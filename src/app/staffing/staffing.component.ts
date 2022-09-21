@@ -304,12 +304,12 @@ We promise to partner with you and help bring diversity in your organization. Le
   ];
 
   programCalendar = [
-    { courseTitle: 'Post Degree Programming Course with ONE Live Project', location: 'Sr. Business Analyst', targetDate: '04-Aug-18' },
-    { courseTitle: 'Getting started with.Net, C# and ASP.NET', location: 'Mumbai, India', targetDate: '04-Jul-18' },
-    { courseTitle: 'Architecture (Design Patterns and UML)', location: 'Mumbai, India', targetDate: '28-Jun-18' },
-    { courseTitle: 'Load and Performance Testing (by using Load runner)	', location: 'Mumbai, India', targetDate: '	28-Jul-18' },
-    { courseTitle: 'MS Excel 2007 for Beginners', location: 'Mumbai, India', targetDate: '20-Jul-18' },
-    { courseTitle: 'Ms Excel 2007 for Experienced', location: 'Mumbai, India', targetDate: '15-Aug-18' }
+    { courseTitle: 'Post Degree Programming Course with ONE Live Project', location: 'Sr. Business Analyst', targetDate: '04-Aug-23' },
+    { courseTitle: 'Getting started with.Net, C# and ASP.NET', location: 'Mumbai, India', targetDate: '04-Jul-23' },
+    { courseTitle: 'Architecture (Design Patterns and UML)', location: 'Mumbai, India', targetDate: '28-Jun-23' },
+    { courseTitle: 'Load and Performance Testing (by using Load runner)	', location: 'Mumbai, India', targetDate: '	28-Jul-23' },
+    { courseTitle: 'MS Excel 2007 for Beginners', location: 'Mumbai, India', targetDate: '20-Jul-23' },
+    { courseTitle: 'Ms Excel 2007 for Experienced', location: 'Mumbai, India', targetDate: '15-Aug-23' }
   ];
 
 

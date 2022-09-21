@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-home',
@@ -81,7 +82,7 @@ export class HomeComponent {
     ]
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private sharedservice: SharedService) {
     this.sevices = [
       {
         title: 'IT, telecom and software',
@@ -136,7 +137,7 @@ export class HomeComponent {
       },
       {
         title: 'Data Services',
-        titlelink: 'ProductEngineering',
+        titlelink: 'DataEngineering',
         color: 'red',
         list : [
           {name: 'Data Engineering'},
@@ -149,7 +150,7 @@ export class HomeComponent {
       },
       {
         title: 'IT Staffing & Training',
-        titlelink: 'ProductEngineering',
+        titlelink: 'StaffingServices',
         color: 'green',
         list : [
           {name: 'Staffing Services'},
@@ -162,6 +163,22 @@ export class HomeComponent {
       },
     ];
   }
+
+  
+getUrl(i, title){
+  if(title == 'ProductEngineering'){
+    this.router.navigateByUrl('/SoftwareEngineering' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(i, 'ProductEngineering')
+  }
+  else if(title == 'DataEngineering'){
+    this.router.navigateByUrl('/DataServices' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(i, 'DataEngineering')
+  }
+  else if(title == 'StaffingServices'){
+    this.router.navigateByUrl('/ItStafingAndServices' , {skipLocationChange: true}); 
+    this.sharedservice.nextMessage(i, 'StaffingServices')
+  } 
+}
   // images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   banner = [
@@ -304,22 +321,5 @@ btnOurProduct = function() {
 lernmore = function(url) {
   this.router.navigateByUrl('/ManagedServices' , {skipLocationChange: true});
 };
-
-solutionLink = function(i, title){
-  if(title == 'ProductEngineering'){
-    this.router.navigateByUrl('/SoftwareEngineering' , {skipLocationChange: true}); 
-    this.sharedservice.nextMessage(i, 'ProductEngineering')
-  }
-  else if(title == 'Data Services'){
-    this.router.navigateByUrl('/DataServices' , {skipLocationChange: true}); 
-    this.sharedservice.nextMessage(1, 'ProductEngineering')
-  }
-  else if(title == 'IT Staffing & Training'){
-    this.router.navigateByUrl('/ItStafingAndServices' , {skipLocationChange: true}); 
-    this.sharedservice.nextMessage(1, 'ProductEngineering')
-  }
-  
-}
-
 }
 

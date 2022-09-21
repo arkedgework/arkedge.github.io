@@ -13,11 +13,11 @@ export class CareerComponent implements OnInit {
 ];
 
 career = [
-  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2020'},
-  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2020'},
-  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2020'},
-  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2020'},
-  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2020'},
+  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2023'},
+  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2023'},
+  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2023'},
+  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2023'},
+  {jobcode : 'B302', jobtitle : 'Sr. Business Analyst', location : 'Mumbai, India', targetDate: '20-Feb-2023'},
 ];
 
   constructor() { }

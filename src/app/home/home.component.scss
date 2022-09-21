@@ -16,7 +16,7 @@
 		z-index: 10;
 		color: #fff;
 		text-align: left;
-		width: 650px;
+		width: 750px;
 		transform: translateY(-50%);
 		transition: all 1s;
 		opacity:0;
@@ -195,6 +195,7 @@ $green:#4bbb57;
 		text-align: center;
 		transition: transform 1s ease;
 		transform-style: preserve-3d;
+		cursor:pointer;
 		.panel-front{
 			border-top: 5px solid;
 			padding-top: 25px;
