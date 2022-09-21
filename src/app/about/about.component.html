@@ -105,7 +105,7 @@
                                         </div>
                                         <div *ngFor="let item of solution"
                                             class="col-lg-4 col-md-4 col-sm-12 panel-container">
-                                            <div class="panel">
+                                            <div class="panel" (click)="getUrl(1, item.titlelink);">
                                                 <div class="panel-front {{item.color}}">
                                                     <div class="panel-heading">
                                                         <div class="icon-circle circle-bg">
@@ -317,6 +317,11 @@
                                             At ARKEDGE, we all aspire to be tomorrow's leader. Individually we are pathfinders and collectively we are a doer (achiever).
                                             <br>
                                             We are passionate about everything that we do and so do it the best way.
+                                        </p>
+                                        <p>
+                                            We are quite an experienced and energetic team of enthusiastic people covering Generation X to Generation Z who are determined to design, manage, build and maintain high-quality solutions for a wide range of businesses and individuals.
+                                            <br>
+Our highly qualified and trained team comprises of an energetic bunch covering all age groups with a common determination: to provide our clients with world-class advanced solutions and products
                                         </p>
                                     </div>
                                 </div>

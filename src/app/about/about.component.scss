@@ -46,7 +46,6 @@ $randomBg:#c3d04e, #8778d9, #ffab00, #ff5630, #02b8d9, #5391ee;
         display:flex;
         p{
 			align-self: center;
-			padding-left:150px
         }
 	}
 	img{
@@ -92,6 +91,7 @@ $green:#4bbb57;
 		text-align: center;
 		transition: transform 1s;
 		transform-style: preserve-3d;
+		cursor:pointer;
 		.panel-front{
 			border-top: 5px solid;
 			padding-top: 25px;
@@ -107,6 +107,9 @@ $green:#4bbb57;
 				z-index: -1;
 			}
 			&.red{
+				p{
+					color:#fff;
+				}
 				background:url(../../assets/images/1.jpg) no-repeat top center;
 				border-color: $red;
 				.circle-bg{
@@ -134,6 +137,9 @@ $green:#4bbb57;
 		.panel-back{
 			padding-top: 25px;
 			&.red{
+				p{
+					color:#fff;
+				}
 				background-color:$red;
 			}
 			

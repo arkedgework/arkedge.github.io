@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModalConfig, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-about',
@@ -82,46 +84,49 @@ export class AboutComponent implements OnInit {
   ];
   closeResult = '';
 
-  constructor(config: NgbModalConfig, private modalService: NgbModal) {
+  constructor(config: NgbModalConfig, private modalService: NgbModal, private router: Router, private sharedservice: SharedService) {
 
     this.solution = [
       {
-        title: 'Data Management',
-        color: 'red',
-        list: [
-          { name: 'Cleanse Dataset' },
-          { name: 'Data Mapping & Conversion' },
-          { name: 'Data Migration & Consolidation' },
-          { name: 'Spend Analysis' }
-        ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
-        icon: '#icon_mgmt'
-      },
-      {
-        title: 'Software Engineering',
-        color: 'blue',
-        list: [
-          { name: 'Product Engineering' },
-          { name: 'Application Development' },
-          { name: 'UX/UI Development' },
-          { name: 'Software Testing & QA' }
-        ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
-        icon: '#icon_softEngg'
-      },
-      {
-        title: 'IT Staffing & Training',
-        color: 'green',
-        list: [
-          { name: 'Staffing Services' },
-          { name: 'Industries' },
-          { name: 'Courses' },
-          { name: 'Program Calendar' }
-        ],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio',
-        icon: '#icon_training'
-      },
-    ];
+         title: 'Software Engineering',
+         titlelink: 'ProductEngineering',
+         color: 'blue',
+         list : [
+           {name: 'Product Engineering'},
+           {name: 'Application Development'},
+           {name: 'UX/UI Development'},
+           {name: 'Software Testing & QA'}
+         ],
+         description: 'Software engineering is a concept in and of itself, but to better understand it, you need to know what each part of the term means before you can fully understand how they operate together. It can be difficult to understand, even though it does seem straightforward.',
+         icon: '#icon_softEngg'
+       },
+       {
+         title: 'Data Services',
+         titlelink: 'DataEngineering',
+         color: 'red',
+         list : [
+           {name: 'Data Engineering'},
+           {name: 'Data Management'},
+           {name: 'Data Science'},
+           {name: 'Cloud Computing'}
+         ],
+         description: 'Data Services is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The goal of data management is to help people, organizations, and connected things optimize the use of data within the bounds of policy and regulation.',
+         icon: '#icon_mgmt'
+       },
+       {
+         title: 'IT Staffing & Training',
+         titlelink: 'StaffingServices',
+         color: 'green',
+         list : [
+           {name: 'Staffing Services'},
+           {name: 'Industries'},
+           {name: 'Courses'},
+           {name: 'Program Calendar'}
+         ],
+         description: `Develop the skills your workforce needs to compete and win. Our curated learning pathways help close knowledge gaps and drive measurable outcomes. Whether you're a team of 5 or 50,000, We offers flexible options to work with your eLearning goals and budgets.`,
+         icon: '#icon_training'
+       },
+     ];
 
     this.leaders = [
       {name : 'Same Martinez',
@@ -149,6 +154,21 @@ export class AboutComponent implements OnInit {
       desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet.'
      }
    ];
+  }
+
+  getUrl(i, title){
+    if(title == 'ProductEngineering'){
+      this.router.navigateByUrl('/SoftwareEngineering' , {skipLocationChange: true}); 
+      this.sharedservice.nextMessage(i, 'ProductEngineering')
+    }
+    else if(title == 'DataEngineering'){
+      this.router.navigateByUrl('/DataServices' , {skipLocationChange: true}); 
+      this.sharedservice.nextMessage(i, 'DataEngineering')
+    }
+    else if(title == 'StaffingServices'){
+      this.router.navigateByUrl('/ItStafingAndServices' , {skipLocationChange: true}); 
+      this.sharedservice.nextMessage(i, 'StaffingServices')
+    } 
   }
 
   open(content) {
