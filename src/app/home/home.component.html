@@ -27,6 +27,21 @@
         </ng-template>
     </ngb-carousel>
 </div>
+
+<section class="section-short-info">
+    <div class="container">
+    <div class="row">
+        <div *ngFor="let item of shortInfo; index as i" class="col col-lg-3 col-md-3 col-sm-12 panel-container">
+            <div class="panel">
+                <div class="panel-body">
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
 <section class="section-info">
     <div class="container">
         <div class="row">
@@ -404,3 +419,20 @@
         </div>
     </div>
 </section>
+
+<section class="cookies-setting" [ngClass]="isOpen ? '' : 'hide'">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-9 col-md-3 col-sm-12">
+                <p>This website uses cookies to enhance site navigation and improve functionality, analyze site usage,
+                    and assist in our marketing and advertising efforts. Please click "I accept cookies" to let us know
+                    you're okay with our use of all cookies. For more information please see the cookies section of our
+                    Privacy Policy.</p>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm-12">
+                <button type="submit" class="btn btn-primary" (click)="addCookies();">I Accept Cookies</button>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -63,11 +63,8 @@
 			opacity:.9;
 		}
 	}
-
-
 }
-	
-	.carousel-indicators {
+.carousel-indicators {
 		li{
 			width: 10px;
 			height: 10px;
@@ -100,6 +97,38 @@
 
 ngb-carousel{
 	outline: none;
+}
+
+.section-short-info{
+	background: rgba(20, 51, 110, 1);
+	padding:25px 0;
+	p{
+		margin:0px;
+		color:#fff;
+	}
+	.col{
+		border-right:1px solid rgba(255, 255, 255, 0.5);
+		padding-top:10px;
+		padding-bottom:10px;
+		&:last-child{
+			border-right:none;
+		}
+	}
+}
+
+.cookies-setting{
+	position:fixed;
+	background: rgba(5, 27, 72, 0.7);
+	bottom:0;
+	left:0;
+	padding:10px 0;
+	p{
+		color:#fff;
+		margin:0;
+	}
+	&.hide{
+		display:none;
+	}
 }
 
 .panel-heading, .panel-body  {
