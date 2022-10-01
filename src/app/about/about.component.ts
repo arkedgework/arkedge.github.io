@@ -75,13 +75,17 @@ export class AboutComponent implements OnInit {
   ];
 
   partnerInfo = [
-    {title: 'Mint International', desc: 'HR and Recruitment cell.', url: 'http://www.mintinternational.com/'},
-    {title: 'Best Containers', desc: 'One of the biggest manufacturers in bunk and porta cabins, houses etc.', url: 'http://bcc-india.com'},
-    {title: 'Dreaming Code', desc: 'The biggest custom application development group in USA.', url: 'http://dreamingcode.com'},
-    {title: 'Royal College', desc: 'One of the leading college in Mira Road, Thane.', url: 'http://royalcollegemiraroad.edu.in/'},
-    {title: 'Alshariah', desc: 'Arab Institute for Studies and Development Programs', url: 'http://alshariah.com/'},
-    {title: 'Miracle Foods', desc: 'The biggest dealer in agro products, rice, basmati rice, spices', url: 'http://miraclefoods.in/'}
-  ];
+    {title: 'Indicsoft Technologies Private Limited', desc: `A global provider of full-spectrum software services, Indicsoft is known the world over for delivering forward-looking, scalable, robust and cost-efficient solutions to its clients.`, url:'http://www.indicsoft.com/'},
+    {title: 'Indoqubix', desc: `Indoqubix was started in 2022 with a vision of being a Digital First company that specializes in providing cost-effective innovative technological solutions`, url:'https://www.indoqubix.com'},
+    {title: ' Pentaknot Solutions Pvt. Ltd ', desc: `We make softwares, that enrich Human Experience.`, url: 'https://pentaknot.com/'},
+    {title: 'Team Liquid', desc: `Team Liquid is a world renowned professional gaming organization established in 2000. Since our grassroots beginnings as a Battle.`, url:'https://www.teamliquid.com/'},
+    {title: ' Creative Commons ', desc: `Honoring 20 years of open sharing using CC licenses, join us in 2022 to celebrate Better Sharing – advancing universal access to knowledge and culture, and fostering creativity, innovation, and collaboration for a brighter future. `, url:' https://creativecommons.org/'},
+    {title: 'Web All Solution', desc: `We are specialized in designing and creating elegant, clean and beautiful websites more than 11+ year of experience`, url:'http://dreamingcode.com/'},
+    {title: 'Mint International', desc: `Mint International is a global HR outsourcing & consulting firm delivering a comprehensive assortment of Human Resource Management services to companies across the globe.`, url:'http://www.mintinternational.com/'},
+    {title: 'DreamingCode', desc: `DreamingCode implements commerce across mobile, web & retail in the cloud. We enable companies to gain marketshare and mindshare through powerful eCommerce technology and creative solutions that deliver bankable results backed by Radical Support from our Boston, MA headquarters!`, url:'https://www.dreamingcode.com/'},
+    {title: 'Muzna Group', desc: `We are a privately owned multi-discipline organization comprised of a group of departments since its inspection in 2018. The Group is growing from strength to strength to achieve excellence across many industries and sectors that we operate in.`, url:'https://muznagroup.com/'},
+    {title:'Alshariah ', desc: `Alshariah`, url:' http://alshariah.com/ '},
+      ];
   closeResult = '';
 
   constructor(config: NgbModalConfig, private modalService: NgbModal, private router: Router, private sharedservice: SharedService) {

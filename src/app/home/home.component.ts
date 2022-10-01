@@ -226,7 +226,11 @@ getUrl(i, title){
     }
   ];
 
-  client = [
+  partner = [
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
+    {img: 'assets/images/client'},
     {img: 'assets/images/client'},
     {img: 'assets/images/client'},
     {img: 'assets/images/client'},
