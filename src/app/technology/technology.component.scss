@@ -14,6 +14,26 @@ ul{
     }
 }
 
+.tech-key-diff{
+    .info-panel{
+        padding:50px 15px;  
+    }
+    .img-panel{
+      margin-right:-15px;
+      height: 100%;
+      img{
+        height: calc(100%);
+      }
+    }
+    padding:0;
+    &._2{
+        .img-panel{
+            margin-right:0;
+            margin-left:-15px;
+        }  
+    }
+}
+
 section{
     &:nth-child(3){
         background:#e5f0fa;
@@ -25,6 +45,34 @@ section{
                 margin-top:15px;
                
             }
+        }
+    }
+}
+
+.o-t-l{
+    background: #e5f0fa;
+    h1{
+        margin-bottom:0;
+    }
+    .slick-slide{
+        img{
+          width: 100%;
+        }
+      }
+}
+
+.o-d-p{
+    .panel{
+        border: 1px solid rgba(224, 224, 224, 1);
+        .panel-heading{
+            background-color: rgba(249, 249, 249, 1);
+            padding:15px;
+            i{
+                margin-right:15px;
+            }
+        }
+        .panel-body{
+            padding:15px;  
         }
     }
 }
