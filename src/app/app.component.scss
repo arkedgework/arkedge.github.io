@@ -431,6 +431,24 @@ textarea.form-control{
 
 	}
 
+	.o-t-l{
+		.slick-slide{
+			.slide{
+				padding:5px;
+	
+			}
+			span{
+			  display: inline-block;
+			  width: 25%;
+			  padding:10px;
+			}
+			img{
+			  background: #fff;
+			  border-radius:5px; 
+			 }
+		  }
+	}
+
 	@media (max-width: 576px){
 		.inner-nav-tab{
 		.tab-navigation{

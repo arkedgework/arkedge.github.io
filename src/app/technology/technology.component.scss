@@ -14,6 +14,37 @@ ul{
     }
 }
 
+
+ul.info-bar{
+    margin-left: 5px;
+    align-self: center;
+    li{
+        padding: 0 0 10px 20px;
+        list-style: none outside;
+        font-size: 16px;
+        position: relative;
+        font-weight: bold;
+        &::before{
+            content: " ";
+            background: #214f7a;
+            font-weight: bold;
+            position:absolute;
+            top:8px;
+            left:0px;
+            width: 10px;
+            height:10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        p{
+            font-weight: normal;
+        }
+    }
+    &.obtain-visibility{
+        margin-left:50px;
+    }
+}
+
 .tech-key-diff{
     .info-panel{
         padding:50px 15px;  
@@ -52,21 +83,19 @@ section{
 .o-t-l{
     background: #e5f0fa;
     h1{
-        margin-bottom:0;
+        margin-bottom:15px;
     }
-    .slick-slide{
-        img{
-          width: 100%;
-        }
-      }
 }
 
 .o-d-p{
     .panel{
         border: 1px solid rgba(224, 224, 224, 1);
+        margin-bottom:30px;
+        border-radius: 5px;
+        overflow: hidden;
         .panel-heading{
             background-color: rgba(249, 249, 249, 1);
-            padding:15px;
+            padding:30px;
             i{
                 margin-right:15px;
             }

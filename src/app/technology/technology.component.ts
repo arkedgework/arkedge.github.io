@@ -13,8 +13,7 @@ export class TechnologyComponent implements OnInit {
   }
 
   slideConfig = {
-    rows: 2,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     infinite: false,
@@ -37,7 +36,7 @@ export class TechnologyComponent implements OnInit {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {
@@ -52,16 +51,209 @@ export class TechnologyComponent implements OnInit {
     ]
   };
 
-  partner = [
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'},
-    {img: 'assets/images/client'}
+  tech = [
+    {
+      title :'Web / API Frameworks',
+      slist :[
+        {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      },
+      {
+        img: 'assets/images/technology/webapi'
+      }
+    ]
+    },
+    {
+      title :'Front End',
+      slist :[
+        {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      },
+      {
+        img: 'assets/images/technology/frontend'
+      }
+    ]
+    },
+    {
+      title :'Database and Machine learning',
+      slist :[
+        {
+        img: 'assets/images/technology/ml'
+      },
+      {
+        img: 'assets/images/technology/ml'
+      },
+      {
+        img: 'assets/images/technology/ml'
+      },
+      {
+        img: 'assets/images/technology/ml'
+      },
+      {
+        img: 'assets/images/technology/ml'
+      }
+    ]
+    },
+    {
+      title :'UI-UX',
+      slist :[
+        {
+        img: 'assets/images/technology/uiux'
+      },
+      {
+        img: 'assets/images/technology/uiux'
+      },
+      {
+        img: 'assets/images/technology/uiux'
+      }
+    ]
+    },
+    {
+      title :'Cloud Dav Ops',
+      slist :[
+        {
+        img: 'assets/images/technology/cloud'
+      },
+      {
+        img: 'assets/images/technology/cloud'
+      },
+      {
+        img: 'assets/images/technology/cloud'
+      },
+      {
+        img: 'assets/images/technology/cloud'
+      },
+      {
+        img: 'assets/images/technology/cloud'
+      }
+    ]
+    }
   ];
+
+  principles =[
+    {
+    'icon' : '#icon_mgmt',
+    'title' : 'Requirement Elicitation',
+    list : [
+      {'list' : 'User stories/ Use cases'},
+      {'list' : 'Prototyping'},
+      {'list' : 'Continuous feedback'},
+      {'list' : 'XXXX'}
+    ]
+    },
+    {
+      'icon' : '#icon_mgmt',
+      'title' : 'Customized Design',
+      list : [
+        {'list' : 'Pluggable components'},
+        {'list' : 'Configuration driven'},
+        {'list' : 'Separation of concerns'},
+        {'list' : 'XXXX'}
+      ]
+      },
+      {
+        'icon' : '#icon_mgmt',
+        'title' : 'Sustainable Analytics',
+        list : [
+          {'list' : 'Separation of storage'},
+          {'list' : 'Separation of computation'},
+          {'list' : 'Parallel and distributed'},
+          {'list' : 'XXXX'}
+        ]
+        },
+        {
+          'icon' : '#icon_mgmt',
+          'title' : 'Visualizations',
+          list : [
+            {'list' : 'Responsive dashboards'},
+            {'list' : 'Custom reports'},
+            {'list' : 'BI integration'},
+            {'list' : 'XXXX'}
+          ]
+          },
+          {
+            'icon' : '#icon_mgmt',
+            'title' : 'Serverless Architecture',
+            list : [
+              {'list' : 'Cloud migration services'},
+              {'list' : 'Infrastructure automation'},
+              {'list' : 'Productionalize ML solutions'},
+              {'list' : 'XXXX'}
+            ]
+            },
+            {
+              'icon' : '#icon_mgmt',
+              'title' : 'Reusable Modules',
+              list : [
+                {'list' : 'Microservices'},
+                {'list' : 'Web services'},
+                {'list' : 'Modularization'},
+                {'list' : 'XXXX'}
+              ]
+              },
+              {
+                'icon' : '#icon_mgmt',
+                'title' : 'Integrable solutions',
+                list : [
+                  {'list' : 'SOA'},
+                  {'list' : 'Standard protocols'},
+                  {'list' : 'Message and Event driven'},
+                  {'list' : 'XXXX'}
+                ]
+                },
+                {
+                  'icon' : '#icon_mgmt',
+                  'title' : 'Agile Mindset',
+                  list : [
+                    {'list' : 'Iterative releases'},
+                    {'list' : 'Predictable Delivery'},
+                    {'list' : 'Welcome Change'},
+                    {'list' : 'High Visibility'}
+                  ]
+                  }
+]
+
 
 }
