@@ -100,21 +100,22 @@
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div *ngFor="let item of principles; index as i" class="col-lg-3 col-md-3 col-sm-12">
             <div class="panel">
               <div class="panel-heading">
                  <i class="icon icon-small">
                     <svg focusable="false">
-                      <use xlink:href="#icon_mgmt"></use>
+                        <use attr.xlink:href="{{item.icon}}"></use>
                     </svg>
                   </i>
-                <span>Data Science & Analytics</span>
+                <span>{{item.title}}</span>
               </div>
               <div class="panel-body">
-                <p>Use state-of-the-art machine learning techniques to cut through the noise in the rapidly
-                  changing information landscape and find patterns in the data to monitor trends, predict, and
-                  gain insights.</p>
-                <a href="javascript:void(0)" (click)="open(dsa)">Read more</a>
+                <ul class="info-bar">
+                    <li *ngFor="let listItem of item.list;">
+                            {{listItem.list}}
+                    </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -127,11 +128,15 @@
         <div class="row">
             <div class="col-sm-12 center">
                 <h1>Our Technology Landscape</h1>
-                <h6>Web / API Frameworks</h6>
             </div>
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                <div ngxSlickItem *ngFor="let client of partner; index as i" class="slide col-lg-3 col-md-3 col-sm-12">
-                    <img src="assets/images/partnerLogo/logo{{i+1}}.png" alt="" width="100%">
+                <div ngxSlickItem *ngFor="let item of tech; index as i" class="slide">
+                    <div class="center">
+                    <h6>{{item.title}}</h6>
+                    <span *ngFor="let sl of item.slist; index as i">
+                        <img src="{{sl.img}}/logo{{i+1}}.png" alt="" width="25%">
+                    </span>
+                   </div>
                 </div>
             </ngx-slick-carousel>
         </div>
