@@ -147,6 +147,14 @@ export class TechnologyComponent implements OnInit {
       },
       {
         img: 'assets/images/technology/uiux'
+      },{
+        img: 'assets/images/technology/uiux'
+      },
+      {
+        img: 'assets/images/technology/uiux'
+      },
+      {
+        img: 'assets/images/technology/uiux'
       }
     ]
     },
@@ -174,83 +182,81 @@ export class TechnologyComponent implements OnInit {
 
   principles =[
     {
-    'icon' : '#icon_mgmt',
+    'icon' : '#icon_re',
     'title' : 'Requirement Elicitation',
     list : [
       {'list' : 'User stories/ Use cases'},
       {'list' : 'Prototyping'},
-      {'list' : 'Continuous feedback'},
-      {'list' : 'XXXX'}
+      {'list' : 'Continuous feedback'}
     ]
     },
     {
-      'icon' : '#icon_mgmt',
+      'icon' : '#icon_cd',
       'title' : 'Customized Design',
       list : [
         {'list' : 'Pluggable components'},
         {'list' : 'Configuration driven'},
         {'list' : 'Separation of concerns'},
-        {'list' : 'XXXX'}
+        
       ]
       },
       {
-        'icon' : '#icon_mgmt',
+        'icon' : '#icon_sa',
         'title' : 'Sustainable Analytics',
         list : [
           {'list' : 'Separation of storage'},
           {'list' : 'Separation of computation'},
           {'list' : 'Parallel and distributed'},
-          {'list' : 'XXXX'}
+          
         ]
         },
         {
-          'icon' : '#icon_mgmt',
+          'icon' : '#icon_visualg',
           'title' : 'Visualizations',
           list : [
             {'list' : 'Responsive dashboards'},
             {'list' : 'Custom reports'},
             {'list' : 'BI integration'},
-            {'list' : 'XXXX'}
+            
           ]
           },
           {
-            'icon' : '#icon_mgmt',
+            'icon' : '#icon_sarch',
             'title' : 'Serverless Architecture',
             list : [
               {'list' : 'Cloud migration services'},
               {'list' : 'Infrastructure automation'},
               {'list' : 'Productionalize ML solutions'},
-              {'list' : 'XXXX'}
+              
             ]
             },
             {
-              'icon' : '#icon_mgmt',
+              'icon' : '#icon_rusable',
               'title' : 'Reusable Modules',
               list : [
                 {'list' : 'Microservices'},
                 {'list' : 'Web services'},
                 {'list' : 'Modularization'},
-                {'list' : 'XXXX'}
+                
               ]
               },
               {
-                'icon' : '#icon_mgmt',
+                'icon' : '#icon_is',
                 'title' : 'Integrable solutions',
                 list : [
                   {'list' : 'SOA'},
                   {'list' : 'Standard protocols'},
                   {'list' : 'Message and Event driven'},
-                  {'list' : 'XXXX'}
+                  
                 ]
                 },
                 {
-                  'icon' : '#icon_mgmt',
+                  'icon' : '#icon_mindset',
                   'title' : 'Agile Mindset',
                   list : [
                     {'list' : 'Iterative releases'},
                     {'list' : 'Predictable Delivery'},
-                    {'list' : 'Welcome Change'},
-                    {'list' : 'High Visibility'}
+                    {'list' : 'Welcome Change'}
                   ]
                   }
 ]

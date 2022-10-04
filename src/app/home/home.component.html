@@ -31,10 +31,35 @@
 <section class="section-short-info">
     <div class="container">
     <div class="row">
-        <div *ngFor="let item of shortInfo; index as i" class="col col-lg-3 col-md-3 col-sm-12 panel-container">
+        <div class="col col-lg-3 col-md-3 col-sm-12 panel-container">
             <div class="panel">
                 <div class="panel-body">
-                    <p>{{item.description}}</p>
+                    <p>Delivered <span class="highlight">150+</span> Complex <br>
+                        products & Projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-3 col-sm-12 panel-container">
+            <div class="panel">
+                <div class="panel-body">
+                    <p>Over <span class="highlight">50</span> Satisfied<br>
+                         Customers across Globe</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-3 col-sm-12 panel-container">
+            <div class="panel">
+                <div class="panel-body">
+                    <p>Highly <span class="highlight">Experienced</span> <br>
+                        Quality Professionals Team</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-3 col-sm-12 panel-container">
+            <div class="panel">
+                <div class="panel-body">
+                    <p>Expertise <span class="highlight">100+</span> modern <br>
+                        Tools and Technologies</p>
                 </div>
             </div>
         </div>
@@ -258,7 +283,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 center">
-                <h1>HAPPY <span class="heading-highlight">PARTNER</span></h1>
+                <h1>OUR <span class="heading-highlight">PARTNERS</span></h1>
                 <h6>
                     consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                     accumsan et viverra justo commodo. <br>Proin sodales pulvinar tempor.lacus accumsan et viverra justo
@@ -423,11 +448,10 @@
 <section class="cookies-setting" [ngClass]="isOpen ? '' : 'hide'">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-9 col-md-3 col-sm-12">
+            <div class="col col-lg-9 col-md-9 col-sm-12">
                 <p>This website uses cookies to enhance site navigation and improve functionality, analyze site usage,
                     and assist in our marketing and advertising efforts. Please click "I accept cookies" to let us know
-                    you're okay with our use of all cookies. For more information please see the cookies section of our
-                    Privacy Policy.</p>
+                    you're okay with our use of all cookies.</p>
             </div>
             <div class="col col-lg-3 col-md-3 col-sm-12">
                 <button type="submit" class="btn btn-primary" (click)="addCookies();">I Accept Cookies</button>

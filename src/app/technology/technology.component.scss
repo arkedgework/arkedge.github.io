@@ -58,6 +58,7 @@ ul.info-bar{
     }
     padding:0;
     &._2{
+        background-color: #f9f9f9;
         .img-panel{
             margin-right:0;
             margin-left:-15px;
@@ -90,18 +91,36 @@ section{
 .o-d-p{
     .panel{
         border: 1px solid rgba(224, 224, 224, 1);
-        margin-bottom:30px;
+        margin-bottom:20px;
         border-radius: 5px;
         overflow: hidden;
         .panel-heading{
             background-color: rgba(249, 249, 249, 1);
-            padding:30px;
+            padding:20px;
+            color:#214f7a;
+            font-size: 18px;
+            font-weight: bold;
+            svg{
+                fill:#214f7a;
+            }
             i{
                 margin-right:15px;
             }
         }
         .panel-body{
             padding:15px;  
+            ul{
+                &.info-bar{
+               li{
+                font-weight: normal;
+                padding-bottom: 5px;
+                &::before{
+                    height: 7px;
+                    width:7px;
+                }
+               }
+                }
+            }
         }
     }
 }

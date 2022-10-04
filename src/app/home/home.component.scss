@@ -105,6 +105,10 @@ ngb-carousel{
 	p{
 		margin:0px;
 		color:#fff;
+		font-size: 18px;
+		span{
+			color:#EEB40B;
+		}
 	}
 	.col{
 		border-right:1px solid rgba(255, 255, 255, 0.5);
@@ -122,9 +126,11 @@ ngb-carousel{
 	bottom:0;
 	left:0;
 	padding:10px 0;
+	width:100%;
 	p{
 		color:#fff;
 		margin:0;
+		font-size: 14px;
 	}
 	&.hide{
 		display:none;
@@ -141,7 +147,7 @@ ngb-carousel{
 }
 
 .clients{
-	background-color: rgba(247, 247, 247, 1);
+	background-color: #fff;
 	h6{
 		margin-bottom:50px;
 	}
