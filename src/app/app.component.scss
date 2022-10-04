@@ -171,6 +171,7 @@ svg:not(:root) {
 	position:relative;
 	height: 300px;
     overflow: hidden;
+	background:#bfdbf3;
     img{
         width:100%;
     }
@@ -183,10 +184,10 @@ svg:not(:root) {
         padding: 10px 0;
 		color:#214f7a;
 		.row{
-			margin-top: 170px;
+			margin-top: 125px;
 		}
 		h1{
-			margin:0;
+			margin:0 0 15px;
 		}
 		h6{
 			line-height: 25px;
@@ -205,6 +206,18 @@ textarea.form-control{
 	border-radius: 15px;
 	resize: none;
 }
+
+.clients {
+	.slick-slide{
+		background:#fff;
+		border:1px solid #e0e0e0;
+		margin:0 5px;
+		padding:0px;
+		border-radius:5px;
+		overflow: hidden;
+	}
+}
+
 .accordion{
 		.card{
 			border-radius:0px;

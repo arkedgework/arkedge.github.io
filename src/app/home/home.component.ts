@@ -164,21 +164,6 @@ export class HomeComponent {
         icon: '#icon_training'
       },
     ];
-
-    this.shortInfo = [
-      {
-        description:`Delivered 150+ Complex products & Projects`
-      },
-      {
-        description:`Over 50 Satisfied Customers across Globe`
-      },
-      {
-        description:`Highly Experienced Quality Professionals Team`
-      },
-      {
-        description:`Expertise 100+ modern Tools and Technologies`
-      }
-    ]
   }
 
   
