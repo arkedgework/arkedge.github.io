@@ -87,41 +87,41 @@ export class HomeComponent {
   constructor(private router: Router, private sharedservice: SharedService) {
     this.sevices = [
       {
-        title: 'IT, telecom and software',
-        color: 'skyblue',
-        description: '',
-        icon: '#icon_telecom'
+        title: 'Technology',
+        color: '#faddbe',
+        description: ' ',
+        icon: '#icon_technology'
       },
       {
-        title: 'ITES - BPO & KPO',
-        color: 'yellow ',
-        description: '',
-        icon: '#icon_customerService'
+        title: 'Travel & Hospitality',
+        color: '#fdb6b6',
+        description: ' ',
+        icon: '#icon_travel'
       },
       {
-        title: 'Engineering & Manufacturing',
-        color: 'orange',
-        description: '',
-        icon: '#icon_engineeringMgf'
+        title: 'Government & Nonprofit',
+        color: '#cce5a2',
+        description: ' ',
+        icon: '#icon_GovernmentNonprofit'
       },
       {
-        title: 'Consumer goods and retail',
-        color: 'limegreen',
-        description: '',
-        icon: '#icon_retail'
+        title: 'Financial Services',
+        color: '#bdd3ff',
+        description: ' ',
+        icon: '#icon_financialServices'
       },
       {
-        title: 'Financial services and insurance',
-        color: 'purple',
-        description: '',
-        icon: '#icon_finervice'
+        title: 'Energy & Utilities',
+        color: '#f0c1c1',
+        description: ' ',
+        icon: '#icon_EnergyUtilities'
       },
       {
-        title: 'Health care & Pharmaceuticals',
-        color: 'blue',
-        description: '',
-        icon: '#icon_healthCare'
-      },
+        title: 'Industrial Manufacturing',
+        color: '#b7bdf6',
+        description: ' ',
+        icon: '#icon_IndustrialManufacturing'
+      }
     ];
     this.solution = [
      {
