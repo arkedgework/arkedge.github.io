@@ -145,6 +145,21 @@ svg:not(:root) {
 	width: 24px;
 	height: 24px;
 }
+
+$colors :#faddbe, #fdb6b6, #cce5a2, #bdd3ff, #b7bdf6, #f0c1c1, #b6f9d6, #dedf93, #8cf3ec, #f8ddfa, #f3d68c, #c8e092;
+
+
+@for $i from 1 through length($colors){
+    .color#{$i} {
+		cursor: pointer;
+        .icon-circle{ background-color: nth($colors, $i)}
+        &:hover{
+            background-color:  nth($colors, $i) !important;
+        }
+        
+    }
+}
+
 .slick-slider {
 	width: calc(100% - 100px);
 	margin: auto;

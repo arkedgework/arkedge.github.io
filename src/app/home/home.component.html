@@ -220,10 +220,10 @@
                 </h6>
             </div>
 
-            <div *ngFor="let item of sevices" class="col-lg-4 col-md-4 col-sm-12">
-                <div class="panel">
+            <div *ngFor="let item of sevices; index as i" class="col-lg-4 col-md-4 col-sm-12">
+                <div class="panel color{{i + 1}}">
                     <div class="panel-heading">
-                        <div class="icon-circle {{item.color}}">
+                        <div class="icon-circle">
                             <i class="icon icon-medium">
                                 <svg focusable="false">
                                     <use attr.xlink:href="{{item.icon}}"></use>

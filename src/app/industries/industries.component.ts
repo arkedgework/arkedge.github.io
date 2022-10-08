@@ -19,113 +19,77 @@ export class IndustriesComponent implements OnInit {
 
   sevices = [
     {
-      title: 'IT, telecom and software',
-      color: 'skyblue',
+      title: 'Technology',
+      color: 'faddbe',
       description: ' ',
-      icon: '#icon_telecom'
+      icon: '#icon_technology'
     },
     {
-      title: 'ITES - BPO & KPO',
-      color: 'yellow ',
+      title: 'Travel & Hospitality',
+      color: 'fdb6b6',
       description: ' ',
-      icon: '#icon_customerService'
+      icon: '#icon_travel'
     },
     {
-      title: 'Engineering & Manufacturing',
-      color: 'orange',
+      title: 'Government & Nonprofit',
+      color: 'cce5a2',
       description: ' ',
-      icon: '#icon_engineeringMgf'
+      icon: '#icon_GovernmentNonprofit'
     },
     {
-      title: 'Consumer goods and retail',
-      color: 'limegreen',
+      title: 'Financial Services',
+      color: 'bdd3ff',
       description: ' ',
-      icon: '#icon_retail'
+      icon: '#icon_financialServices'
     },
     {
-      title: 'Financial services and insurance',
-      color: 'purple',
+      title: 'Industrial Manufacturing',
+      color: 'b7bdf6',
       description: ' ',
-      icon: '#icon_finervice'
+      icon: '#icon_IndustrialManufacturing'
     },
     {
-      title: 'Health care & Pharmaceuticals',
-      color: 'blue',
+      title: 'Energy & Utilities',
+      color: 'f0c1c1',
+      description: ' ',
+      icon: '#icon_EnergyUtilities'
+    },
+    {
+      title: 'Media & Technology',
+      color: 'b6f9d6',
+      description: ' ',
+      icon: '#icon_MediaTechnology'
+    },
+    {
+      title: 'Telecom',
+      color: 'dedf93',
+      description: ' ',
+      icon: '#icon_Telecom'
+    },
+    {
+      title: 'Oil & Gas',
+      color: '8cf3ec',
+      description: ' ',
+      icon: '#icon_OilGas'
+    },
+    {
+      title: 'Pharma, Health & Life Sciences',
+      color: 'f8ddfa',
       description: ' ',
       icon: '#icon_healthCare'
     },
     {
       title: 'Consumer Packaged Goods',
-      color: 'blue',
+      color: 'f3d68c',
       description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Energy & Utilities',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Financial Services',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Government & Nonprofit',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Industrial Manufacturing',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Media & Technology',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Oil & Gas',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Pharma, Health & Life Sciences',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
+      icon: '#icon_Goods'
     },
     {
       title: 'Retail',
-      color: 'blue',
+      color: 'c8e092',
       description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Technology',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Telecom',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_healthCare'
-    },
-    {
-      title: 'Travel & Hospitality',
-      color: 'blue',
-      description: ' ',
-      icon: '#icon_travel'
-    },
+      icon: '#icon_Retail'
+    }
   ];
 
   constructor() { }
