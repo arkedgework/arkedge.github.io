@@ -17,6 +17,9 @@ export class HeaderComponent implements OnInit {
 
   constructor(private sharedservice: SharedService) {
     this.list = [
+        {name: 'Product'},
+        {name: 'Advancesolution'},
+        {name: 'ai'},
         {name: 'AboutArkedge'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
@@ -24,7 +27,8 @@ export class HeaderComponent implements OnInit {
         {name: 'Industries'},
         {name: 'Technology'},
         {name: 'Career'},
-        {name: 'Sitemap'}
+        {name: 'Sitemap'},
+        {name: 'ContactUs'}
     ];
     this.managedService = [
       {name: 'SoftwareEngineering',
@@ -73,6 +77,7 @@ export class HeaderComponent implements OnInit {
   getUrl(i, title) {
     this.dropDown.nativeElement.hidden = true;
     this.sharedservice.nextMessage(i, title);
+    this.slideToggel();
   }
 
 }

@@ -189,6 +189,8 @@ $colors :#faddbe, #fdb6b6, #cce5a2, #bdd3ff, #b7bdf6, #f0c1c1, #b6f9d6, #dedf93,
 	background:#bfdbf3;
     img{
         width:100%;
+		height: 100%;
+    	object-fit: cover;
     }
     .page-title{
         position: absolute;
@@ -478,6 +480,9 @@ textarea.form-control{
 	}
 
 	@media (max-width: 576px){
+		body{
+			padding-top:78px;
+		}
 		.inner-nav-tab{
 		.tab-navigation{
 			background: none;
