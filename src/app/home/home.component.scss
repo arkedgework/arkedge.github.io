@@ -110,7 +110,7 @@ ngb-carousel{
 			color:#EEB40B;
 		}
 	}
-	.col{
+	.col-info{
 		border-right:1px solid rgba(255, 255, 255, 0.5);
 		padding-top:10px;
 		padding-bottom:10px;
@@ -118,6 +118,7 @@ ngb-carousel{
 			border-right:none;
 		}
 	}
+
 }
 
 .cookies-setting{
@@ -389,6 +390,8 @@ $purple:#787fc2;
 		position: absolute;
 		top:0;
 		left:0;
+		height: 100%;
+		object-fit: cover;
 	}
 	h1{
 		color:#fff;
@@ -631,4 +634,20 @@ $purple:#787fc2;
 		}
 	}
 }
+.col-info{
+	border:none;
+	padding:none;
+	.panel{
+		border-bottom:1px solid rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	&:last-child{
+		.panel{
+			border-bottom:none;
+		}
+	}
+	
+}
+
 }
