@@ -461,6 +461,9 @@ textarea.form-control{
 
 	}
 
+	.slick-list{
+		padding:0px !important;
+	}
 	.o-t-l{
 		.slick-slide{
 			.slide{
@@ -492,8 +495,15 @@ textarea.form-control{
 			margin-top:10px;
 			background:#e5e5e5;
 		}
-
-	}}
+		}
+		.btn{
+			&+ .btn{
+				margin-left:0px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+		}
+	}
 
 	@media (min-width: 1200px){
 		.container, .container-lg, .container-md, .container-sm, .container-xl{

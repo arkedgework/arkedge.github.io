@@ -77,7 +77,10 @@ export class HeaderComponent implements OnInit {
   getUrl(i, title) {
     this.dropDown.nativeElement.hidden = true;
     this.sharedservice.nextMessage(i, title);
-    this.slideToggel();
+    if (!this.isOpen){
+      this.slideToggel();
+    }
+    
   }
 
 }
