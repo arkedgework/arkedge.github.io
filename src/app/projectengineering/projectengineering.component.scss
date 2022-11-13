@@ -259,6 +259,9 @@ $purple:#5b4da0;
 }
 
 .ui-ux-info{
+    .col{
+        margin-bottom:25px;
+    }
 .panel{
     height:100%;
     border-radius:15px;
@@ -400,6 +403,16 @@ $purple:#5b4da0;
     .qa-testing{
         img{
              margin-left:0px;
+        }
+    }
+    .ui-ux-process{
+        h3{
+            margin-top:25px;
+        }
+    }
+    .ui-ux-info{
+        .row{
+            display: block;
         }
     }
 }

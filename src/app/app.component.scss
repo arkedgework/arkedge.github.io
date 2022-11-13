@@ -331,7 +331,6 @@ textarea.form-control{
 				white-space: nowrap;
     			overflow: auto;
 				flex-wrap: nowrap;
-				padding-bottom: 10px;
 				&::-webkit-scrollbar {
 					height: 5px;
 				  }
@@ -482,6 +481,20 @@ textarea.form-control{
 		  }
 	}
 
+		.scroll {
+			&::-webkit-scrollbar {
+				width: 20px;
+			}
+	
+			&::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 5px grey;
+			}
+	
+			&::-webkit-scrollbar-thumb {
+				background: rgb(175, 174, 174);
+			}
+		}
+
 	@media (max-width: 576px){
 		body{
 			padding-top:78px;
@@ -489,6 +502,7 @@ textarea.form-control{
 		.inner-nav-tab{
 		.tab-navigation{
 			background: none;
+			overflow-y: auto;
 		}
 		.nav-tabs .nav-item{
 			width:100%;
@@ -502,6 +516,12 @@ textarea.form-control{
 				margin-top: 15px;
 				margin-bottom: 15px;
 			}
+		}
+		.v-flex{
+			display: block;
+		}
+		iframe{
+			width: 100%;
 		}
 	}
 
