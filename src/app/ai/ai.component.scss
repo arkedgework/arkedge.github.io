@@ -37,6 +37,7 @@ ul.info-bar {
   table{
     border:1px solid #dee2e6;
     border-top:none;
+    margin:0px;
     td, th{
       vertical-align: middle;
     }
@@ -406,4 +407,17 @@ padding:70px 0 25px;
         }
       }
     }
+}
+
+@media (max-width: 576px)
+{
+  .automation-level, .section-ai.inner-nav-tab .tab-navigation{
+    overflow: auto;
+    margin-bottom:1rem;
+  }
+  .main-tabber-nav{
+    a{
+      padding: 15px;
+    }
+  }
 }
