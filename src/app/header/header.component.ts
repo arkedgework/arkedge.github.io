@@ -9,6 +9,7 @@ import { SharedService } from '../shared.service';
 })
 export class HeaderComponent implements OnInit {
   list;
+  mainList
   managedService;
   managedServiceSoftEng;
   isOpen = true;
@@ -16,10 +17,13 @@ export class HeaderComponent implements OnInit {
   @ViewChild("dropDown",{static:true}) dropDown: ElementRef;
 
   constructor(private sharedservice: SharedService) {
+    this.mainList = [
+      {name: 'Product', routerlink:'Product'},
+      {name: 'Advance Solution', routerlink:'AdvanceSolution'},
+      {name: 'AI & Automation', routerlink:'ai'},
+
+  ];
     this.list = [
-        {name: 'Product'},
-        {name: 'Advancesolution'},
-        {name: 'ai'},
         {name: 'AboutArkedge'},
         {name: 'OurHappyClients'},
         {name: 'NewsAndEventUpdate'},
@@ -36,7 +40,7 @@ export class HeaderComponent implements OnInit {
         {name: 'ProductEngineering'},
         {name: 'ApplicationDevelopment'},
         {name: 'Ux/UiDevelopment'},
-        {name: 'SoftwareTesting & Qa'}
+        {name: 'SoftwareTesting & QA'}
       ]},
       {name: 'DataServices',
       managedServiceList : [
@@ -79,8 +83,6 @@ export class HeaderComponent implements OnInit {
     this.sharedservice.nextMessage(i, title);
     if (!this.isOpen){
       this.slideToggel();
-    }
-    
+    }   
   }
-
 }
