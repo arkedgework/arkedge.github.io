@@ -73,6 +73,15 @@ export class HomeComponent {
         }
       },
       {
+        breakpoint: 960,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
         breakpoint: 480,
         settings: {
           arrows: true,

@@ -129,8 +129,15 @@
   </a>
 </div>
   <ul class="scroll-menu">
-    <li class="menu-list">
-      <a>Managed Services</a>
+    <li *ngFor="let item of mainList; index as i" class="menu-list">
+      <a (click)="slideToggel()" routerLink="{{item.routerlink}}" routerLinkActive="active" skipLocationChange=true>{{item.name}}</a>
+    </li>
+    <li class="menu-list meun-arrow">
+      <a>Managed Services  <i class="icon icon-ex-small">
+        <svg focusable="false">
+          <use xlink:href="#icon_downArrow"></use>
+        </svg>
+      </i></a>
       <ul class="sub-nav">
         <li class="container">
           <div class="row">
